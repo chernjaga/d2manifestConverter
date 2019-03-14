@@ -6,26 +6,58 @@ const color = require('colors');
 const manifestProperties = getPropertiesObject(args);
 
 console.log('let\'s get start'.yellow);
+console.time('downloading');
 
 
-fetch(manifestProperties.inventoryItemDefinition)
-    .then((response)=>{
+fetch(manifestProperties.enemyRaceDefinition.url)
+    .then((response) => {
+
         return response.json();
     })
-    .then((body)=>{
-        fs.createWriteStream('destination/bundle.json').write(JSON.stringify(body));
+    .then((body) => {
+        fs.createWriteStream(`destination/${manifestProperties.enemyRaceDefinition.name}.json`).write(JSON.stringify(body));
+        console.timeEnd('downloading');
+        console.log('finished'.yellow);
     })
+    .catch((error) => {
+        console.log(error.message.red);
+    });
 
 function getPropertiesObject(langOption) {
     let lang = langOption.ru || langOption.r ? 'ru' : 'en';
+
     return {
-        enemyRaceDefinition: `https://destiny.plumbing/${lang}/raw/DestinyEnemyRaceDefinition.json`,
-        itemCategoryDefinition: `https://destiny.plumbing/${lang}/raw/DestinyItemCategoryDefinition.json`,
-        inventoryItemDefinition: `https://destiny.plumbing/${lang}/raw/DestinyInventoryItemDefinition.json`,
-        itemTierTypeDefinition: `https://destiny.plumbing/${lang}/raw/DestinyItemTierTypeDefinition.json`,
-        sandboxPerkDefinition: `https://destiny.plumbing/${lang}/raw/DestinySandboxPerkDefinition.json`,
-        statDefinition: `https://destiny.plumbing/${lang}/raw/DestinyStatDefinition.json`,
-        statGroupDefinition: `https://destiny.plumbing/${lang}/raw/DestinyDestinyStatGroupDefinition.json`,
-        reducedCollectableInventoryItems: `https://destiny.plumbing/${lang}/raw/reducedCollectableInventoryItems.json`
+        enemyRaceDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyEnemyRaceDefinition.json`,
+            name: 'DestinyEnemyRaceDefinition'
+        },
+        itemCategoryDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyItemCategoryDefinition.json`,
+            name: 'DestinyItemCategoryDefinition'
+        },
+        inventoryItemDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyInventoryItemDefinition.json`,
+            name: 'DestinyInventoryItemDefinition'
+        },
+        itemTierTypeDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyItemTierTypeDefinition.json`,
+            name: 'DestinyItemTierTypeDefinition'
+        },
+        sandboxPerkDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinySandboxPerkDefinition.json`,
+            name: 'DestinySandboxPerkDefinition'
+        },
+        statDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyStatDefinition.json`,
+            name: 'DestinyStatDefinition'
+        },
+        statGroupDefinition: {
+            url: `https://destiny.plumbing/${lang}/raw/DestinyDestinyStatGroupDefinition.json`,
+            name: 'DestinyDestinyStatGroupDefinition'
+        },
+        reducedCollectableInventoryItems: {
+            url: `https://destiny.plumbing/${lang}/raw/reducedCollectableInventoryItems.json`,
+            name: 'reducedCollectableInventoryItem'
+        }
     };
 };
