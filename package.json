@@ -1,9 +1,10 @@
 {
-  "name": "d2manifestconverter",
+  "name": "d2manifestConverter",
   "version": "0.0.1",
   "description": "destiny manifest extractor",
-  "main": "app/index/js",
+  "main": "app/index.js",
   "scripts": {
+    "start": "node app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.3.3",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.3.0"
   }
 }
