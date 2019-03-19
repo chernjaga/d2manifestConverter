@@ -1,3 +1,5 @@
+// mapping to reduce items definition size
+
 module.exports = {
     classes: [
         "Auto Rifle",
@@ -5,8 +7,8 @@ module.exports = {
         "Grenade Launcher",
         "Fusion Rifle",
         "Hand Cannon",
-        "Machine Gun",
         "Linear Fusion Rifle",
+        "Machine Gun",
         "Pulse Rifle",
         "Rocket Launcher",
         "Scout Rifle",

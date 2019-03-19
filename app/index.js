@@ -9,95 +9,109 @@ const imageHost = 'https://www.bungie.net'
 const manifestProperties = require('./languageSpecificObject').setLanguage(args);
 
 console.log('let\'s get start'.yellow);
-console.log('weapon starts are downloading...'.yellow);
+console.log('weapon stats are downloading...'.yellow);
 console.time('completed');
 
-// stats request
-
-fetch(manifestProperties.statDefinition.url)
-    .then((response) => {
+const statsPromise = fetch(manifestProperties.statDefinition.url).then((response) => {
         console.log('stats are downloaded'.yellow);
 
         return response.json();
-    })
-    .then((body) => {
-        fs.createWriteStream(`destination/${manifestProperties.statDefinition.name}.json`).write(JSON.stringify(body));
-
-        return body;
     }).then((stats) => {
-        console.log('weapon definition is downloading...'.yellow);
+        fs.createWriteStream(`destination/${manifestProperties.statDefinition.name}.json`).write(JSON.stringify(stats));
 
-        // definition request
+        return stats;
+    });
 
-        fetch(manifestProperties.inventoryItemDefinition.url)
-            .then((response) => {
+const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url).then((response) => {
+        console.log('perks are downloaded'.yellow);
 
-                return response.json();
-            })
-            .then((body) => {
-                console.log('definition downloading is completed'.yellow);
-                console.log('...processing'.yellow);
+        return response.json();
+    }).then((perks) => {
+        fs.createWriteStream(`destination/${manifestProperties.sandboxPerkDefinition.name}.json`).write(JSON.stringify(perks));
 
-                let reducedWeapon = [];
-                for (let item in body) {
+        return perks;
+    });
 
-                    // cycle to iterate the weapon item type
+const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url).then((response) => {
+        console.log('definitions are downloaded...'.yellow);
 
-                    for (let classItem of weaponMap.classes) {
-                        if (body[item].itemTypeDisplayName === classItem) {
+        return response.json();
+    });
+
+Promise.all([statsPromise, perksPromise, definitionPromise]).then((responces) => {
+            console.log('...processing'.yellow);
+
+            let stats = responces[0];
+            let perks = responces[1];
+            let weaponDefinition = responces[2];
+            let reducedWeapon = [];
+            
+            for (let item in weaponDefinition) {
+
+                // cycle to iterate the weapon item type. Definition level
+
+                for (let classItem of weaponMap.classes) {
+                    if (weaponDefinition[item].itemTypeDisplayName === classItem) {
+                        try {
+                            let displayedPropertyObject = weaponDefinition[item].displayProperties;
+                            let statsArray = [];
+
+                            let reducedWeaponDescription = {
+                                displayedProperties: {
+                                    name: displayedPropertyObject.name,
+                                    description: displayedPropertyObject.description,
+                                    image: imageHost + weaponDefinition[item].screenshot || null,
+                                    icon: displayedPropertyObject.hasIcon ? imageHost + displayedPropertyObject.icon : null
+                                },
+                                description: {
+                                    stats: [],
+                                    perks: []
+                                }
+                            };
+
+                            // stats level
                             try {
-                                let displayedPropertyObject = body[item].displayProperties;
-                                let statsArray = [];
-
-                                let reducedWeaponDescription = {
-                                    displayedProperties: {
-                                        name: displayedPropertyObject.name,
-                                        description: displayedPropertyObject.description,
-                                        image: imageHost + body[item].screenshot || null,
-                                        icon: displayedPropertyObject.hasIcon ? imageHost + displayedPropertyObject.icon : null
-                                    },
-                                    description: {
-                                        stats: []
+                                for (let stat in weaponDefinition[item].stats.stats) {
+                                    if (stats[stat].displayProperties.name) {
+                                        statsArray.push({
+                                            statName: stats[stat].displayProperties.name,
+                                            statValue: weaponDefinition[item].stats.stats[stat].value,
+                                            minValue: weaponDefinition[item].stats.stats[stat].minimum,
+                                            maxValue: weaponDefinition[item].stats.stats[stat].maximum
+                                        });
                                     }
                                 };
-
-                                try {
-                                    for (let stat in body[item].stats.stats) {
-                                        if (stats[stat].displayProperties.name) {
-                                            statsArray.push({
-                                                statName: stats[stat].displayProperties.name,
-                                                statValue: body[item].stats.stats[stat].value,
-                                                minValue: body[item].stats.stats[stat].minimum,
-                                                maxValue: body[item].stats.stats[stat].maximum
-                                            });
-                                        }
-                                    };
-                                } catch (error) {
-                                    console.log('error in stats level'.red);
-                                    console.log(error.message);
-                                };
-
-                                reducedWeaponDescription.description.stats = statsArray;
-
-                                reducedWeapon.push(reducedWeaponDescription);
                             } catch (error) {
-                                console.log('error in displayed properties level'.red);
+                                console.log('error in stats level'.red);
                                 console.log(error.message);
                             };
-                        }
-                    };
+
+                            // perks level
+
+                            try {
+
+                            } catch (error) {
+                                console.log('error in perks level'.red);
+                                console.log(error.message);
+                            };
+
+
+                            reducedWeaponDescription.description.stats = statsArray;
+
+                            reducedWeapon.push(reducedWeaponDescription);
+                        } catch (error) {
+                            console.log('error in displayed properties level'.red);
+                            console.log(error.message);
+                        };
+                    }
                 };
+            };
 
-                fs.createWriteStream(`destination/${manifestProperties.inventoryItemDefinition.name}.json`).write(JSON.stringify(reducedWeapon));
+            fs.createWriteStream(`destination/${manifestProperties.inventoryItemDefinition.name}.json`).write(JSON.stringify(reducedWeapon));
 
-                console.timeEnd('completed');
-                console.log('finished'.yellow);
-            })
-            .catch((error) => {
-                console.log(error.message.red);
-            });
-
-    })
-    .catch((error) => {
-        console.log(error.message.red);
-    });
+            console.timeEnd('completed');
+            console.log('finished'.yellow);
+        })
+        .catch((error) => {
+            console.log(error.message.red);
+        });
