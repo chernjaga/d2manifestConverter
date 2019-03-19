@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
+const fileType = require('file-type');
 
 const weaponMap = require('./weaponMap');
 const imageHost = 'https://www.bungie.net'
@@ -9,7 +10,7 @@ const imageHost = 'https://www.bungie.net'
 const manifestProperties = require('./languageSpecificObject').setLanguage(args);
 
 console.log('let\'s get start'.yellow);
-console.log('weapon stats are downloading...'.yellow);
+console.log('downloading...'.yellow);
 console.time('completed');
 
 const statsPromise = fetch(manifestProperties.statDefinition.url).then((response) => {
@@ -32,11 +33,15 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url).then((r
         return perks;
     });
 
-const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url).then((response) => {
-        console.log('definitions are downloaded...'.yellow);
+const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
+    .then((responce)=>{
 
-        return response.json();
-    });
+        return responce.json();
+    })
+    .catch((error)=>{
+        console.log(error.message.red);
+    })
+
 
 Promise.all([statsPromise, perksPromise, definitionPromise]).then((responces) => {
             console.log('...processing'.yellow);
