@@ -34,9 +34,10 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url).then((r
     });
 
 const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
-    .then((responce)=>{
-
-        return responce.json();
+    .then((response)=>{
+        let temp = fs.createWriteStream('destination/temp.json');
+        response.body.pipe(temp);
+        return response.json();
     })
     .catch((error)=>{
         console.log(error.message.red);
