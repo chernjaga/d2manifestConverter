@@ -2,9 +2,9 @@ module.exports = {
     setLanguage: function getPropertiesObject(langOption) {
         let lang = langOption.lang || 'en';
         return {
-            enemyRaceDefinition: {
-                url: `https://destiny.plumbing/${lang}/raw/DestinyEnemyRaceDefinition.json`,
-                name: 'reducedEnemyRaceDefinition'
+            damageTypeDefinition: {
+                url: `https://destiny.plumbing/${lang}/raw/DestinyDamageTypeDefinition.json`,
+                name: 'reducedDamageTypeDefinition'
             },
             itemCategoryDefinition: {
                 url: `https://destiny.plumbing/${lang}/raw/DestinyItemCategoryDefinition.json`,
