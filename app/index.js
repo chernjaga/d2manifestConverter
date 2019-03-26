@@ -2,9 +2,6 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
-const through = require('through2');
-
-const fileType = require('file-type');
 
 const weaponMap = require('./weaponMap');
 const imageHost = 'https://www.bungie.net';
