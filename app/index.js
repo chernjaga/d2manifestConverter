@@ -30,26 +30,12 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url)
         return perks;
     });
 
-const definitionPromise = new Promise((resolve, reject)=>{
-    fetch(manifestProperties.inventoryItemDefinition.url)
-        .then((response) => {
-            let string = '';
-            response.body.on('data', function (buffer) {
-                let chunk = buffer.toString();
-                string += chunk;
-            });
+const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
+        .then((definition) => {
+            console.log('definitions are downloaded'.yellow);
 
-
-            response.body.on('end', function () {
-                resolve(JSON.stringify(string));
-            });
-        })
-        // .then((definition) => {
-        //     console.log('definitions are downloaded'.yellow);
-
-        //     return definition;
-        // });
-});
+            return definition.json();
+        });
 
 console.log('let\'s start'.yellow);
 console.log('downloading...'.yellow);
