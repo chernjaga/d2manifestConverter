@@ -199,6 +199,10 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                 name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name,
                                 hash: weaponDefinition[item].itemCategoryHashes[0]
                             },
+                            class: {
+                                name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name,
+                                hash: weaponDefinition[item].itemCategoryHashes[2]
+                            },
                             stats: statsArray,
                             damageType: damageTypeObject,
                             perks: perksArray,
