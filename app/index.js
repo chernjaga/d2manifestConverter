@@ -69,7 +69,8 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
                         name: display.name,
                         icon: display.hasIcon ? imageHost + display.icon : null,
                         hasIcon: display.hasIcon,
-                        description: display.description
+                        description: display.description,
+                        investmentStats: data[socket].investmentStats,
                     }
                 }
             } catch (error) {
@@ -136,7 +137,8 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                         statName: stats[stat].displayProperties.name,
                                         statValue: weaponDefinition[item].stats.stats[stat].value,
                                         minValue: weaponDefinition[item].stats.stats[stat].minimum,
-                                        maxValue: weaponDefinition[item].stats.stats[stat].maximum
+                                        maxValue: weaponDefinition[item].stats.stats[stat].maximum,
+                                        hash: stat
                                     });
                                 }
                             };
@@ -159,10 +161,12 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                     let randomizedPerkHash = randomizedPerk.plugItemHash;
                                     if (perks[randomizedPerkHash] || sockets[randomizedPerkHash]) {
                                         let displayObject = perks[randomizedPerkHash] ? perks[randomizedPerkHash].displayProperties : sockets[randomizedPerkHash];
+                                        let investmentStats = perks[randomizedPerkHash].investmentStats || sockets[randomizedPerkHash].investmentStats || null
                                         randomizedPerks.push({
                                             name: displayObject.name,
                                             description: displayObject.description,
                                             icon: displayObject.hasIcon ? imageHost + displayObject.icon : null,
+                                            investmentStats: investmentStats,
                                             hash: randomizedPerkHash
                                         });
                                     }
