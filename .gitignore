@@ -37,8 +37,8 @@ node_modules/
 jspm_packages/
 
 #destination files 
-destination/en
-destination/ru
+#destination/en
+#destination/ru
 
 # TypeScript v1 declaration files
 typings/
