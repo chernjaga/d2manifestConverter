@@ -4,7 +4,7 @@ const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
 
 const weaponMap = require('./weaponMap');
-const imageHost = 'https://www.bungie.net';
+// const imageHost = 'https://www.bungie.net';
 
 const manifestProperties = require('./languageSpecificObject').setLanguage(args);
 
@@ -13,7 +13,7 @@ const damageTypePromise = fetch(manifestProperties.damageTypeDefinition.url)
     .then((damageTypes) => {
         console.log('damageTypes are downloaded'.yellow);
 
-        fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.damageTypeDefinition.name}.json`).write(JSON.stringify(damageTypes));
+        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.damageTypeDefinition.name}.json`).write(JSON.stringify(damageTypes));
 
         return damageTypes;
     });
@@ -22,7 +22,7 @@ const statsPromise = fetch(manifestProperties.statDefinition.url)
     .then((stats) => {
         console.log('stats are downloaded'.yellow);
 
-        fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.statDefinition.name}.json`).write(JSON.stringify(stats));
+        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.statDefinition.name}.json`).write(JSON.stringify(stats));
 
         return stats;
     });
@@ -31,7 +31,7 @@ const categoryDefinitionsPromise = fetch(manifestProperties.itemCategoryDefiniti
     .then(response => response.json())
     .then((categories) => {
         console.log('categories are downloaded'.yellow);
-        fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.itemCategoryDefinition.name}.json`).write(JSON.stringify(categories));
+        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.itemCategoryDefinition.name}.json`).write(JSON.stringify(categories));
 
         return categories;
     });
@@ -40,7 +40,7 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url)
     .then(response => response.json())
     .then((perks) => {
         console.log('perks are downloaded'.yellow);
-        fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.sandboxPerkDefinition.name}.json`).write(JSON.stringify(perks));
+        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.sandboxPerkDefinition.name}.json`).write(JSON.stringify(perks));
 
         return perks;
     });
@@ -67,7 +67,7 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
                     let display = data[socket].displayProperties;
                     reducedSockets[socket] = {
                         name: display.name,
-                        icon: display.hasIcon ? imageHost + display.icon : null,
+                        icon: display.hasIcon ? display.icon : null,
                         hasIcon: display.hasIcon,
                         description: display.description
                     }
@@ -78,7 +78,7 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
             }
         }
 
-        fs.createWriteStream(`destination/${args.lang || 'en'}/weaponSocketsDefinition.json`).write(JSON.stringify(reducedSockets));
+        // fs.createWriteStream(`destination/${args.lang || 'en'}/weaponSocketsDefinition.json`).write(JSON.stringify(reducedSockets));
         return reducedSockets;
     });
 
@@ -91,6 +91,9 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
         console.log('...processing'.yellow);
 
         let reducedWeapon = [];
+        let reducedWeaponStats = {};
+        let perksBucket = {}
+
         let stats = responses[0];
         let perks = responses[1];
         let weaponDefinition = responses[2];
@@ -119,7 +122,7 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
 
                                 damageTypeObject = {
                                     name: damageTypeItem.name,
-                                    icon: damageTypeItem.hasIcon ? imageHost + damageTypeItem.icon : null,
+                                    icon: damageTypeItem.hasIcon ? damageTypeItem.icon : null,
                                     hash: damageTypeHash
                                 };
                             }
@@ -156,16 +159,21 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                 let hash = perksItems[perk].singleInitialItemHash;
                                 let randomizedPerks = [];
 
-                                for (let randomizedPerk of perksItems[perk].randomizedPlugItems) {
+                                for (let randomizedPerk in perksItems[perk].randomizedPlugItems) {
                                     let randomizedPerkHash = randomizedPerk.plugItemHash;
                                     if (perks[randomizedPerkHash] || sockets[randomizedPerkHash]) {
                                         let displayObject = perks[randomizedPerkHash] ? perks[randomizedPerkHash].displayProperties : sockets[randomizedPerkHash];
-                                        randomizedPerks.push({
+                                        objectToPush = {
                                             name: displayObject.name,
                                             description: displayObject.description,
-                                            icon: displayObject.hasIcon ? imageHost + displayObject.icon : null,
+                                            icon: displayObject.hasIcon ? displayObject.icon : null,
                                             hash: randomizedPerkHash
-                                        });
+                                        };
+                                        randomizedPerk.push(objectToPush);
+
+                                        if (!perksBucket[randomizedPerkHash]) {
+                                            perksBucket[randomizedPerkHash] = objectToPush;
+                                        }
                                     }
                                 }
 
@@ -175,12 +183,21 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                         vendorPerk: {
                                             name: displayObject.name,
                                             description: displayObject.description,
-                                            icon: displayObject.hasIcon ? imageHost + displayObject.icon : null,
+                                            icon: displayObject.hasIcon ? displayObject.icon : null,
                                             hash: hash
                                         },
                                         randomizedPerks: randomizedPerks
                                     }
+
                                     perksArray.push(perkObjectToPush);
+                                    if (!perksBucket[hash]) {
+                                        perksBucket[hash] = {
+                                            name: displayObject.name,
+                                            description: displayObject.description,
+                                            icon: displayObject.hasIcon ? displayObject.icon : null,
+                                            hash: hash
+                                        };
+                                    }
                                 }
                             }
                         } catch (error) {
@@ -192,8 +209,8 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                             displayedProperties: {
                                 name: displayedPropertyObject.name,
                                 description: displayedPropertyObject.description,
-                                image: imageHost + weaponDefinition[item].screenshot || null,
-                                icon: displayedPropertyObject.hasIcon ? imageHost + displayedPropertyObject.icon : null
+                                // image: weaponDefinition[item].screenshot || null,
+                                icon: displayedPropertyObject.hasIcon ? displayedPropertyObject.icon : null
                             },
                             rarity: weaponDefinition[item].inventory.tierTypeName,
                             slot: {
@@ -204,13 +221,17 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                 name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name,
                                 hash: weaponDefinition[item].itemCategoryHashes[2]
                             },
-                            stats: statsArray,
+                            // stats: statsArray,
                             damageType: damageTypeObject,
-                            perks: perksArray,
+                            // perks: perksArray,
                             hash: weaponDefinition[item].hash
                         };
 
                         reducedWeapon.push(reducedWeaponDescription);
+                        reducedWeaponStats[weaponDefinition[item].hash] = {
+                            stats: statsArray,
+                            perks: perksArray
+                        }
                     } catch (error) {
                         console.log('error in displayed properties level'.red);
                         console.log(error.message);
@@ -219,7 +240,9 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
             };
         };
 
-        fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.inventoryItemDefinition.name}.json`).write(JSON.stringify(reducedWeapon));
+        fs.createWriteStream(`destination/${args.lang || 'en'}/weaponMainList.json`).write(JSON.stringify(reducedWeapon));
+        fs.createWriteStream(`destination/${args.lang || 'en'}/weaponStats.json`).write(JSON.stringify(reducedWeaponStats));
+        fs.createWriteStream(`destination/${args.lang || 'en'}/perksBucket.json`).write(JSON.stringify(perksBucket));
 
         console.timeEnd('completed');
         console.log('finished'.yellow);
