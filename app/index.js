@@ -71,7 +71,7 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
                         hasIcon: display.hasIcon,
                         description: display.description
                     }
-                }
+                } 
             } catch (error) {
                 console.log('error in sockets level'.red);
                 console.log(error.message);
@@ -99,13 +99,12 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
         let weaponDefinition = responses[2];
         let damageTypes = responses[3];
         let sockets = responses[4];
-        let categories = responses[5]
+        let categories = responses[5];
 
         for (let item in weaponDefinition) {
-
             // cycle to iterate the weapon item type. Definition level
 
-            for (let classItem of weaponMap.classes) {
+            for (let classItem of weaponMap.classes[args.lang || 'en']) {
                 if (weaponDefinition[item].itemTypeDisplayName === classItem) {
                     try {
                         let displayedPropertyObject = weaponDefinition[item].displayProperties;

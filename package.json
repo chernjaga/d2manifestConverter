@@ -14,10 +14,13 @@
   "author": "chernjaga",
   "license": "ISC",
   "dependencies": {
+    "JSONStream": "^1.3.5",
     "colors": "^1.3.3",
+    "event-stream": "^4.0.1",
     "file-type": "^10.9.0",
     "minimist": "^1.2.0",
     "node-fetch": "^2.3.0",
+    "request": "^2.88.0",
     "through2": "^3.0.1"
   }
 }
