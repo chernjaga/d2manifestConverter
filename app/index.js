@@ -2,27 +2,23 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
-
 const weaponMap = require('./weaponMap');
-// const imageHost = 'https://www.bungie.net';
-
 const manifestProperties = require('./languageSpecificObject').setLanguage(args);
 
 const damageTypePromise = fetch(manifestProperties.damageTypeDefinition.url)
     .then(response => response.json())
     .then((damageTypes) => {
         console.log('damageTypes are downloaded'.yellow);
-
-        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.damageTypeDefinition.name}.json`).write(JSON.stringify(damageTypes));
+        console.log('...processing'.yellow);
 
         return damageTypes;
     });
+
 const statsPromise = fetch(manifestProperties.statDefinition.url)
     .then(response => response.json())
     .then((stats) => {
         console.log('stats are downloaded'.yellow);
-
-        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.statDefinition.name}.json`).write(JSON.stringify(stats));
+        console.log('...processing'.yellow);
 
         return stats;
     });
@@ -31,7 +27,7 @@ const categoryDefinitionsPromise = fetch(manifestProperties.itemCategoryDefiniti
     .then(response => response.json())
     .then((categories) => {
         console.log('categories are downloaded'.yellow);
-        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.itemCategoryDefinition.name}.json`).write(JSON.stringify(categories));
+        console.log('...processing'.yellow);
 
         return categories;
     });
@@ -40,7 +36,7 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url)
     .then(response => response.json())
     .then((perks) => {
         console.log('perks are downloaded'.yellow);
-        // fs.createWriteStream(`destination/${args.lang || 'en'}/${manifestProperties.sandboxPerkDefinition.name}.json`).write(JSON.stringify(perks));
+        console.log('...processing'.yellow);
 
         return perks;
     });
@@ -48,6 +44,7 @@ const perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url)
 const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
     .then((definition) => {
         console.log('definitions are downloaded'.yellow);
+        console.log('...processing'.yellow);
 
         return definition.json();
     });
@@ -55,14 +52,18 @@ const definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
 const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.url)
     .then((definition) => {
         console.log('weapon sockets are downloaded'.yellow);
+        console.log('...processing'.yellow);
 
         return definition.json();
     }).then((data) => {
-        console.log('weapon sockets processing...'.yellow);
+        console.log('...weapon sockets processing'.yellow);
+    
         let reducedSockets = {};
 
         for (let socket in data) {
+
             try {
+
                 if (data[socket].nonTransferrable) {
                     let display = data[socket].displayProperties;
                     reducedSockets[socket] = {
@@ -71,14 +72,36 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
                         hasIcon: display.hasIcon,
                         description: display.description
                     }
-                } 
+
+                    // investment stats level
+
+                    if (data[socket].investmentStats) {
+                        let investmentStats = [];
+
+                        try {
+
+                            for (let stat of data[socket].investmentStats) {
+                                investmentStats.push({
+                                    statTypeHash: stat.statTypeHash,
+                                    value: stat.value
+                                });
+                            }
+
+                        } catch (error) {
+                            console.log('error in investment stats level'.red);
+                            console.log(error.message);
+                        }
+                        
+                        reducedSockets[socket].investmentStats = investmentStats
+                    }
+                }
+
             } catch (error) {
                 console.log('error in sockets level'.red);
                 console.log(error.message);
             }
         }
 
-        // fs.createWriteStream(`destination/${args.lang || 'en'}/weaponSocketsDefinition.json`).write(JSON.stringify(reducedSockets));
         return reducedSockets;
     });
 
@@ -102,10 +125,13 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
         let categories = responses[5];
 
         for (let item in weaponDefinition) {
+
             // cycle to iterate the weapon item type. Definition level
 
             for (let classItem of weaponMap.classes[args.lang || 'en']) {
+
                 if (weaponDefinition[item].itemTypeDisplayName === classItem) {
+
                     try {
                         let displayedPropertyObject = weaponDefinition[item].displayProperties;
                         let statsArray = [];
@@ -114,11 +140,12 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                         let reducedWeaponDescription = {};
 
                         // Damage type level
+
                         try {
                             let damageTypeHash = weaponDefinition[item].defaultDamageTypeHash;
+
                             if (damageTypeHash) {
                                 let damageTypeItem = damageTypes[damageTypeHash].displayProperties;
-
                                 damageTypeObject = {
                                     name: damageTypeItem.name,
                                     icon: damageTypeItem.hasIcon ? damageTypeItem.icon : null,
@@ -131,8 +158,11 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                         }
 
                         // stats level
+
                         try {
+
                             for (let stat in weaponDefinition[item].stats.stats) {
+
                                 if (stats[stat].displayProperties.name) {
                                     statsArray.push({
                                         statName: stats[stat].displayProperties.name,
@@ -152,53 +182,42 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
 
                         try {
                             let perksItems = weaponDefinition[item].sockets ? weaponDefinition[item].sockets.socketEntries : [];
-
+console.log(weaponDefinition[item].sockets);
                             for (let perk in perksItems) {
                                 let perkObjectToPush = {};
                                 let hash = perksItems[perk].singleInitialItemHash;
                                 let randomizedPerks = [];
 
-                                for (let randomizedPerk in perksItems[perk].randomizedPlugItems) {
-                                    let randomizedPerkHash = randomizedPerk.plugItemHash;
-                                    if (perks[randomizedPerkHash] || sockets[randomizedPerkHash]) {
-                                        let displayObject = perks[randomizedPerkHash] ? perks[randomizedPerkHash].displayProperties : sockets[randomizedPerkHash];
-                                        objectToPush = {
-                                            name: displayObject.name,
-                                            description: displayObject.description,
-                                            icon: displayObject.hasIcon ? displayObject.icon : null,
-                                            hash: randomizedPerkHash
-                                        };
-                                        randomizedPerk.push(objectToPush);
-
-                                        if (!perksBucket[randomizedPerkHash]) {
-                                            perksBucket[randomizedPerkHash] = objectToPush;
-                                        }
-                                    }
+                                for (let randomizedPerk of perksItems[perk].randomizedPlugItems) {
+                                    randomizedPerks.push(randomizedPerk.plugItemHash);
                                 }
 
                                 if (perks[hash] || sockets[hash]) {
+                                    let investmentStats = sockets[hash] ? sockets[hash].investmentStats : [];
                                     let displayObject = perks[hash] ? perks[hash].displayProperties : sockets[hash];
                                     perkObjectToPush = {
-                                        vendorPerk: {
-                                            name: displayObject.name,
-                                            description: displayObject.description,
-                                            icon: displayObject.hasIcon ? displayObject.icon : null,
-                                            hash: hash
-                                        },
+                                        vendorPerk: hash,
                                         randomizedPerks: randomizedPerks
                                     }
 
                                     perksArray.push(perkObjectToPush);
+
+                                    if (!investmentStats.length) {
+                                        investmentStats = perks[hash] && perks[hash].investmentStats ? perks[hash].investmentStats : [];
+                                    }
+
                                     if (!perksBucket[hash]) {
                                         perksBucket[hash] = {
                                             name: displayObject.name,
                                             description: displayObject.description,
                                             icon: displayObject.hasIcon ? displayObject.icon : null,
+                                            investmentStats: investmentStats,
                                             hash: hash
                                         };
                                     }
                                 }
                             }
+
                         } catch (error) {
                             console.log('error in perks level'.red);
                             console.log(error.message);
@@ -208,7 +227,6 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                             displayedProperties: {
                                 name: displayedPropertyObject.name,
                                 description: displayedPropertyObject.description,
-                                // image: weaponDefinition[item].screenshot || null,
                                 icon: displayedPropertyObject.hasIcon ? displayedPropertyObject.icon : null
                             },
                             rarity: weaponDefinition[item].inventory.tierTypeName,
@@ -220,17 +238,17 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
                                 name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name,
                                 hash: weaponDefinition[item].itemCategoryHashes[2]
                             },
-                            // stats: statsArray,
                             damageType: damageTypeObject,
-                            // perks: perksArray,
                             hash: weaponDefinition[item].hash
                         };
 
                         reducedWeapon.push(reducedWeaponDescription);
                         reducedWeaponStats[weaponDefinition[item].hash] = {
                             stats: statsArray,
-                            perks: perksArray
+                            perks: perksArray,
+                            screenshot: weaponDefinition[item].screenshot || null
                         }
+
                     } catch (error) {
                         console.log('error in displayed properties level'.red);
                         console.log(error.message);
