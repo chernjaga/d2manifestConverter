@@ -2,8 +2,8 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
-const weaponMap = require('./weaponMap');
-const manifestProperties = require('./languageSpecificObject').setLanguage(args);
+const lang = args.lang || 'en';
+const manifestProperties = require('./languageSpecificObject').setLanguage(lang);
 
 const damageTypePromise = fetch(manifestProperties.damageTypeDefinition.url)
     .then(response => response.json())
@@ -64,7 +64,8 @@ const weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.ur
 
             try {
 
-                if (data[socket].nonTransferrable) {
+                if (data[socket].itemCategoryHashes && 
+                (data[socket].itemCategoryHashes[0] === 59 || data[socket].itemCategoryHashes[1] === 59 || data[socket].itemCategoryHashes[2]=== 59)) {
                     let display = data[socket].displayProperties;
                     reducedSockets[socket] = {
                         name: display.name,
@@ -128,9 +129,7 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
 
             // cycle to iterate the weapon item type. Definition level
 
-            for (let classItem of weaponMap.classes[args.lang || 'en']) {
-
-                if (weaponDefinition[item].itemTypeDisplayName === classItem) {
+                if (weaponDefinition[item].itemCategoryHashes &&  weaponDefinition[item].itemCategoryHashes[1] === 1) {
 
                     try {
                         let displayedPropertyObject = weaponDefinition[item].displayProperties;
@@ -182,7 +181,7 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
 
                         try {
                             let perksItems = weaponDefinition[item].sockets ? weaponDefinition[item].sockets.socketEntries : [];
-console.log(weaponDefinition[item].sockets);
+
                             for (let perk in perksItems) {
                                 let perkObjectToPush = {};
                                 let hash = perksItems[perk].singleInitialItemHash;
@@ -254,12 +253,19 @@ console.log(weaponDefinition[item].sockets);
                         console.log(error.message);
                     };
                 }
-            };
+            
         };
 
-        fs.createWriteStream(`destination/${args.lang || 'en'}/weaponMainList.json`).write(JSON.stringify(reducedWeapon));
-        fs.createWriteStream(`destination/${args.lang || 'en'}/weaponStats.json`).write(JSON.stringify(reducedWeaponStats));
-        fs.createWriteStream(`destination/${args.lang || 'en'}/perksBucket.json`).write(JSON.stringify(perksBucket));
+
+        if (!fs.existsSync('./destination')){
+            fs.mkdirSync('./destination');
+        }
+        if (!fs.existsSync(`./destination/${lang}`)){
+            fs.mkdirSync(`./destination/${lang}`);
+        }
+        fs.createWriteStream(`destination/${lang}/weaponMainList.json`).write(JSON.stringify(reducedWeapon));
+        fs.createWriteStream(`destination/${lang}/weaponStats.json`).write(JSON.stringify(reducedWeaponStats));
+        fs.createWriteStream(`destination/${lang}/perksBucket.json`).write(JSON.stringify(perksBucket));
 
         console.timeEnd('completed');
         console.log('finished'.yellow);

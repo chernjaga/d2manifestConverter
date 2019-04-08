@@ -1,6 +1,5 @@
 module.exports = {
-    setLanguage: function getPropertiesObject(langOption) {
-        let lang = langOption.lang || 'en';
+    setLanguage: function getPropertiesObject(lang) {
         return {
             damageTypeDefinition: {
                 url: `https://destiny.plumbing/${lang}/raw/DestinyDamageTypeDefinition.json`,
