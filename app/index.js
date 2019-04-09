@@ -4,7 +4,8 @@ const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
 const lang = args.lang || 'en';
 const isLocal = args.local;
-const manifestProperties = require('./languageSpecificObject').setLanguage(lang);
+const manifestProperties = require('./languageSpecificObject').setLanguage(lang); 
+const imageHost = 'https://www.bungie.net';
 
 var damageTypePromise,
     statsPromise,
@@ -19,7 +20,7 @@ if (!isLocal) {
             console.log('damageTypes are downloaded'.yellow);
             console.log('...processing'.yellow);
 
-            return damageTypes;
+            return correctDamageTypes(damageTypes);
         });
 
     statsPromise = fetch(manifestProperties.statDefinition.url)
@@ -76,7 +77,7 @@ if (!isLocal) {
             console.log('damageTypes are downloaded'.yellow);
             console.log('...processing'.yellow);
 
-            return damageTypes;
+            return correctDamageTypes(damageTypes);
         }).catch((error) => {
             console.log('can\'t read DestinyDamageTypeDefinition.json'.red);
             console.log(error.message);
@@ -191,11 +192,11 @@ function generateApplicationData (responses) {
                     try {
                         let damageTypeHash = weaponDefinition[item].defaultDamageTypeHash;
 
-                        if (damageTypeHash) {
+                        if (damageTypeHash && damageTypes[damageTypeHash]) {
                             let damageTypeItem = damageTypes[damageTypeHash].displayProperties;
                             damageTypeObject = {
                                 name: damageTypeItem.name,
-                                icon: damageTypeItem.hasIcon ? damageTypeItem.icon : null,
+                                icon: damageTypeItem.hasIcon ?imageHost + damageTypeItem.icon : null,
                                 hash: damageTypeHash
                             };
                         }
@@ -257,7 +258,7 @@ function generateApplicationData (responses) {
                                     perksBucket[hash] = {
                                         name: displayObject.name,
                                         description: displayObject.description,
-                                        icon: displayObject.hasIcon ? displayObject.icon : null,
+                                        icon: displayObject.hasIcon ? imageHost + displayObject.icon : null,
                                         investmentStats: investmentStats,
                                         hash: hash
                                     };
@@ -273,8 +274,7 @@ function generateApplicationData (responses) {
                     reducedWeaponDescription = {
                         displayedProperties: {
                             name: displayedPropertyObject.name,
-                            description: displayedPropertyObject.description,
-                            icon: displayedPropertyObject.hasIcon ? displayedPropertyObject.icon : null
+                            icon: displayedPropertyObject.hasIcon ? imageHost + displayedPropertyObject.icon : null
                         },
                         rarity: {
                             name: weaponDefinition[item].inventory.tierTypeName,
@@ -296,7 +296,8 @@ function generateApplicationData (responses) {
                     reducedWeaponStats[weaponDefinition[item].hash] = {
                         stats: statsArray,
                         perks: perksArray,
-                        screenshot: weaponDefinition[item].screenshot || null
+                        description: displayedPropertyObject.description,
+                        screenshot: weaponDefinition[item].screenshot ? imageHost + weaponDefinition[item].screenshot : null
                     }
 
                 } catch (error) {
@@ -321,6 +322,15 @@ function generateApplicationData (responses) {
     console.timeEnd('completed');
     console.log('finished'.yellow);
 };
+
+function correctDamageTypes(data) {
+    let outputData = {}
+    for (let index in data) {
+        outputData[data[index].hash] = data[index];
+    }
+
+    return outputData;
+}
 
 function generateSocketsData (data) {
     console.log('...weapon sockets processing'.yellow);
