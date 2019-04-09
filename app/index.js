@@ -276,7 +276,10 @@ function generateApplicationData (responses) {
                             description: displayedPropertyObject.description,
                             icon: displayedPropertyObject.hasIcon ? displayedPropertyObject.icon : null
                         },
-                        rarity: weaponDefinition[item].inventory.tierTypeName,
+                        rarity: {
+                            name: weaponDefinition[item].inventory.tierTypeName,
+                            hash: weaponDefinition[item].inventory.tierType
+                        },
                         slot: {
                             name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name,
                             hash: weaponDefinition[item].itemCategoryHashes[0]
