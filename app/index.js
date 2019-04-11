@@ -163,7 +163,7 @@ Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, w
 
 function generateApplicationData (responses) {
     console.log('...processing'.yellow);
-    let reducedWeapon = [];
+    let reducedWeapon = {};
     let reducedWeaponStats = {};
     let perksBucket = {}
 
@@ -292,7 +292,7 @@ function generateApplicationData (responses) {
                         hash: weaponDefinition[item].hash
                     };
 
-                    reducedWeapon.push(reducedWeaponDescription);
+                    reducedWeapon[weaponDefinition[item].hash] = reducedWeaponDescription;
                     reducedWeaponStats[weaponDefinition[item].hash] = {
                         stats: statsArray,
                         perks: perksArray,
