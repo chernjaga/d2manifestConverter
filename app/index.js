@@ -5,7 +5,8 @@ const color = require('colors');
 const lang = args.lang || 'en';
 const isLocal = args.local;
 const manifestProperties = require('./languageSpecificObject').setLanguage(lang); 
-const imageHost = 'https://www.bungie.net';
+// const imageHost = 'https://www.bungie.net';
+const imageHost = '';
 
 var damageTypePromise,
     statsPromise,
@@ -209,7 +210,7 @@ function generateApplicationData (responses) {
 
                     try {
 
-                        for (let stat in weaponDefinition[item].stats.stats) {
+                        for (let stat in weaponDefinition[item].stats.stat) {
 
                             if (stats[stat].displayProperties.name) {
                                 statsArray.push({
@@ -281,16 +282,17 @@ function generateApplicationData (responses) {
                             hash: weaponDefinition[item].inventory.tierType
                         },
                         slot: {
-                            name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name,
+                            name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name || null,
                             hash: weaponDefinition[item].itemCategoryHashes[0]
                         },
                         class: {
-                            name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name,
+                            name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name || null,
                             hash: weaponDefinition[item].itemCategoryHashes[2]
                         },
                         damageType: damageTypeObject,
                         hash: weaponDefinition[item].hash
                     };
+                
 
                     reducedWeapon[weaponDefinition[item].hash] = reducedWeaponDescription;
                     reducedWeaponStats[weaponDefinition[item].hash] = {
@@ -303,6 +305,7 @@ function generateApplicationData (responses) {
                 } catch (error) {
                     console.log('error in displayed properties level'.red);
                     console.log(error.message);
+                    console.log('..................'.green);
                 };
             }
         
