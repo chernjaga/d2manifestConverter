@@ -1,1 +1,1 @@
-node app/index --lang=ru
+node app/index --lang=ru -local=true

@@ -81,3 +81,11 @@ typings/
 destination/en/perksBucket.json
 destination/en/weaponMainList.json
 destination/en/weaponStats.json
+*.json
+destination/de/perksBucket.json
+destination/de/weaponMainList.json
+destination/de/weaponStats.json
+destination/en/perksBucket.json
+destination/en/weaponMainList.json
+destination/en/weaponStats.json
+destination/ru/weaponStats.json
