@@ -78,3 +78,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+destination/en/perksBucket.json
+destination/en/weaponMainList.json
+destination/en/weaponStats.json
