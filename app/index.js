@@ -236,10 +236,26 @@ function generateApplicationData (responses) {
                             let perkObjectToPush = {};
                             let hash = perksItems[perk].singleInitialItemHash;
                             let randomizedPerks = [];
-
-                            for (let randomizedPerk of perksItems[perk].randomizedPlugItems) {
-                                randomizedPerks.push(randomizedPerk.plugItemHash);
+                            let tempPerksMap = {};
+                            if (perksItems[perk].randomizedPlugItems.length) {
+                                for (let randomizedPerk of perksItems[perk].randomizedPlugItems) {
+                                    if (!tempPerksMap[randomizedPerk.plugItemHash]) {
+                                        tempPerksMap[randomizedPerk.plugItemHash] = true;
+                                        randomizedPerks.push(randomizedPerk.plugItemHash);
+                                    }
+    
+                                }
                             }
+                            if (perksItems[perk].reusablePlugItems.length) {
+                                for (let randomizedPerk of perksItems[perk].reusablePlugItems) {
+                                    if (!tempPerksMap[randomizedPerk.plugItemHash]) {
+                                        tempPerksMap[randomizedPerk.plugItemHash] = true;
+                                        randomizedPerks.push(randomizedPerk.plugItemHash);
+                                    }
+    
+                                }
+                            }
+                            
 
                             if (perks[hash] || sockets[hash]) {
                                 let investmentStats = sockets[hash] ? sockets[hash].investmentStats : [];
