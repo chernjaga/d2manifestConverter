@@ -9,12 +9,22 @@ const manifestProperties = require('./languageSpecificObject').setLanguage(lang)
 const imageHost = '';
 
 var damageTypePromise,
+    collectibleItemsPromise,
     statsPromise,
     categoryDefinitionsPromise,
     perksPromise,
     definitionPromise;
 
 if (!isLocal) {
+    collectibleItemsPromise = fetch(manifestProperties.collectibleItems.url)
+        .then(response => response.json())
+        .then((collectibles) => {
+            console.log('collectibles are downloaded'.yellow);
+            console.log('...processing'.yellow);
+
+            return collectibles;
+        });
+
     damageTypePromise = fetch(manifestProperties.damageTypeDefinition.url)
         .then(response => response.json())
         .then((damageTypes) => {
@@ -71,6 +81,18 @@ if (!isLocal) {
         });
 
 } else {
+    collectibleItemsPromise = new Promise ((resolve) => {
+            const collectibles = require(`../extractedManifest/${lang}/DestinyCollectibleDefinition.json`);
+            resolve(collectibles);
+        }).then((collectibles) => {
+            console.log('weapon collectibles are downloaded'.yellow);
+            console.log('...processing'.yellow);
+
+            return collectibles;
+        }).catch((error) => {
+            console.log('can\'t read DestinyCollectibleDefinition.json'.red);
+            console.log(error.message);
+        });
     damageTypePromise = new Promise ((resolve) => {
             const damageTypeDefinition = require(`../extractedManifest/${lang}/DestinyDamageTypeDefinition.json`);
             resolve(damageTypeDefinition);
@@ -154,7 +176,7 @@ console.log('let\'s start'.yellow);
 console.log('downloading...'.yellow);
 console.time('completed');
 
-Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise])
+Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise, collectibleItemsPromise])
     .then((responses) => {
         generateApplicationData(responses);
     })
@@ -174,6 +196,18 @@ function generateApplicationData (responses) {
     let damageTypes = responses[3];
     let sockets = responses[4];
     let categories = responses[5];
+    let collectibles = responses[6];
+    let sources = {};
+
+    // src level
+    try {
+        for (let item in collectibles) {
+            sources[collectibles[item].itemHash] = {}
+            sources[collectibles[item].itemHash].name = collectibles[item].sourceString;
+        }
+    } catch (error) {
+        console.log('error in source level'.red);
+    }
 
     for (let item in weaponDefinition) {
 
@@ -300,6 +334,9 @@ function generateApplicationData (responses) {
                         slot: {
                             name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name || null,
                             hash: weaponDefinition[item].itemCategoryHashes[0]
+                        },
+                        source: {
+                            name: sources[item].name.replace('Source: ', '').replace('Источник: ', '')
                         },
                         class: {
                             name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name || null,

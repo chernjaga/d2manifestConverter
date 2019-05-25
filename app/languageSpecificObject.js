@@ -1,6 +1,10 @@
 module.exports = {
     setLanguage: function getPropertiesObject(lang) {
         return {
+            collectibleItems: {
+                url: `https://destiny.plumbing/${lang}/raw/DestinyCollectibleDefinition.json`,
+                name: 'DestinyCollectibleDefinition'
+            },
             damageTypeDefinition: {
                 url: `https://destiny.plumbing/${lang}/raw/DestinyDamageTypeDefinition.json`,
                 name: 'reducedDamageTypeDefinition'
