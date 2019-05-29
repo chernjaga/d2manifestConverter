@@ -217,7 +217,7 @@ function generateApplicationData (responses) {
 
                 try {
                     let displayedPropertyObject = weaponDefinition[item].displayProperties;
-                    let statsArray = [];
+                    let statsObject = {};
                     let damageTypeObject = {};
                     let perksArray = [];
                     let reducedWeaponDescription = {};
@@ -244,16 +244,15 @@ function generateApplicationData (responses) {
 
                     try {
 
-                        for (let stat in weaponDefinition[item].stats.stat) {
-
+                        for (let stat in weaponDefinition[item].stats.stats) {
                             if (stats[stat].displayProperties.name) {
-                                statsArray.push({
+                                statsObject[stat] = {
                                     statName: stats[stat].displayProperties.name,
                                     statValue: weaponDefinition[item].stats.stats[stat].value,
                                     minValue: weaponDefinition[item].stats.stats[stat].minimum,
                                     maxValue: weaponDefinition[item].stats.stats[stat].maximum,
                                     hash: stat
-                                });
+                                };
                             }
                         };
                     } catch (error) {
@@ -336,7 +335,7 @@ function generateApplicationData (responses) {
                             hash: weaponDefinition[item].itemCategoryHashes[0]
                         },
                         source: {
-                            name: sources[item].name.replace('Source: ', '').replace('Источник: ', '')
+                            name: sources[item].name ||  null
                         },
                         class: {
                             name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name || null,
@@ -349,7 +348,7 @@ function generateApplicationData (responses) {
 
                     reducedWeapon[weaponDefinition[item].hash] = reducedWeaponDescription;
                     reducedWeaponStats[weaponDefinition[item].hash] = {
-                        stats: statsArray,
+                        stats: statsObject,
                         perks: perksArray,
                         description: displayedPropertyObject.description,
                         screenshot: weaponDefinition[item].screenshot ? imageHost + weaponDefinition[item].screenshot : null
