@@ -14,7 +14,7 @@ const getUrl = function(url) {
     return `https://www.bungie.net/Platform${url}`
 };
 
-var language = 'ru';
+var language = 'en';
 console.log('Downloading...'.yellow);
 fetch(getUrl('/Destiny2/Manifest/'), params)
 .then(response => response.json())
@@ -51,6 +51,11 @@ fetch(getUrl('/Destiny2/Manifest/'), params)
     .then(json => {
         console.log('writing DestinyStatDefinition');
         fs.createWriteStream('extractedManifest/'+ language +'/DestinyStatDefinition.json').write(JSON.stringify(json['DestinyStatDefinition']));
+        return json;
+    })
+    .then(json => {
+        console.log('writing Duke');
+        fs.createWriteStream('extractedManifest/Duke_en.json').write(JSON.stringify(json['DestinyInventoryItemDefinition'][2112909414]));
         return json;
     })
     

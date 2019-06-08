@@ -288,8 +288,6 @@ function generateApplicationData (responses) {
     
                                 }
                             }
-                            
-
                             if (perks[hash] || sockets[hash]) {
                                 let investmentStats = sockets[hash] ? sockets[hash].investmentStats : [];
                                 let displayObject = perks[hash] ? perks[hash].displayProperties : sockets[hash];
