@@ -3,85 +3,15 @@ const fs = require('fs');
 const args = require('minimist')(process.argv.slice(2));
 const color = require('colors');
 const lang = args.lang || 'en';
-const isLocal = args.local;
-const manifestProperties = require('./languageSpecificObject').setLanguage(lang); 
-// const imageHost = 'https://www.bungie.net';
-const imageHost = '';
+const fetchManifestTables = require('./extract').fetchManifestTables;
 
-var damageTypePromise,
-    collectibleItemsPromise,
-    statsPromise,
-    categoryDefinitionsPromise,
-    perksPromise,
-    definitionPromise;
+console.log('let\'s start'.yellow);
+console.time('completed');
 
-if (!isLocal) {
-    collectibleItemsPromise = fetch(manifestProperties.collectibleItems.url)
-        .then(response => response.json())
-        .then((collectibles) => {
-            console.log('collectibles are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return collectibles;
-        });
-
-    damageTypePromise = fetch(manifestProperties.damageTypeDefinition.url)
-        .then(response => response.json())
-        .then((damageTypes) => {
-            console.log('damageTypes are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return correctDamageTypes(damageTypes);
-        });
-
-    statsPromise = fetch(manifestProperties.statDefinition.url)
-        .then(response => response.json())
-        .then((stats) => {
-            console.log('stats are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return stats;
-        });
-
-    categoryDefinitionsPromise = fetch(manifestProperties.itemCategoryDefinition.url)
-        .then(response => response.json())
-        .then((categories) => {
-            console.log('categories are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return categories;
-        });
-
-    perksPromise = fetch(manifestProperties.sandboxPerkDefinition.url)
-        .then(response => response.json())
-        .then((perks) => {
-            console.log('perks are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return perks;
-        });
-
-    definitionPromise = fetch(manifestProperties.inventoryItemDefinition.url)
-        .then((definition) => {
-            console.log('definitions are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return definition.json();
-        });
-
-    weaponSocketsPromise = fetch(manifestProperties.inventoryItemDefinition.url)
-        .then((definition) => {
-            console.log('weapon sockets are downloaded'.yellow);
-            console.log('...processing'.yellow);
-
-            return definition.json();
-        }).then((data) => {
-
-            return generateSocketsData(data);
-        });
-
-} else {
-    collectibleItemsPromise = new Promise ((resolve) => {
+new Promise((resolve) => {
+    resolve(fetchManifestTables(lang));
+}).then(function() {
+    const collectibleItemsPromise = new Promise ((resolve) => {
             const collectibles = require(`../extractedManifest/${lang}/DestinyCollectibleDefinition.json`);
             resolve(collectibles);
         }).then((collectibles) => {
@@ -93,7 +23,8 @@ if (!isLocal) {
             console.log('can\'t read DestinyCollectibleDefinition.json'.red);
             console.log(error.message);
         });
-    damageTypePromise = new Promise ((resolve) => {
+
+    const damageTypePromise = new Promise ((resolve) => {
             const damageTypeDefinition = require(`../extractedManifest/${lang}/DestinyDamageTypeDefinition.json`);
             resolve(damageTypeDefinition);
         }).then((damageTypes) => {
@@ -106,7 +37,7 @@ if (!isLocal) {
             console.log(error.message);
         });
 
-    statsPromise = new Promise ((resolve) => {
+    const statsPromise = new Promise ((resolve) => {
             const itemStats = require(`../extractedManifest/${lang}/DestinyStatDefinition.json`);
             resolve(itemStats);
         }).then((stats) => {
@@ -119,7 +50,7 @@ if (!isLocal) {
             console.log(error.message);
         });
 
-    categoryDefinitionsPromise = new Promise ((resolve) => {
+    const categoryDefinitionsPromise = new Promise ((resolve) => {
             const categoryDefinitions = require(`../extractedManifest/${lang}/DestinyItemCategoryDefinition.json`);
             resolve(categoryDefinitions);
         }).then((categories) => {
@@ -131,8 +62,8 @@ if (!isLocal) {
             console.log('can\'t read DestinyItemCategoryDefinition.json'.red);
             console.log(error.message);
         });
-    
-    perksPromise = new Promise ((resolve) => {
+
+    const perksPromise = new Promise ((resolve) => {
             const perksDefinitions = require(`../extractedManifest/${lang}/DestinySandboxPerkDefinition.json`);
             resolve(perksDefinitions);
         }).then((perks) => {
@@ -145,7 +76,7 @@ if (!isLocal) {
             console.log(error.message);
         });
 
-    definitionPromise = new Promise ((resolve) => {
+    const definitionPromise = new Promise ((resolve) => {
             const itemDefinitions = require(`../extractedManifest/${lang}/DestinyInventoryItemDefinition.json`);
             resolve(itemDefinitions);
         }).then((definitions) => {
@@ -158,7 +89,7 @@ if (!isLocal) {
             console.log(error.message);
         });
 
-    weaponSocketsPromise = new Promise ((resolve) => {
+    const weaponSocketsPromise = new Promise ((resolve) => {
             const socketsDefinitions = require(`../extractedManifest/${lang}/DestinyInventoryItemDefinition.json`);
             resolve(socketsDefinitions);
         }).then((data) => {
@@ -170,19 +101,16 @@ if (!isLocal) {
             console.log('can\'t read DestinyInventoryItemDefinition.json for sockets level'.red);
             console.log(error.message);
         });
-}
 
-console.log('let\'s start'.yellow);
-console.log('downloading...'.yellow);
-console.time('completed');
+    Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise, collectibleItemsPromise])
+        .then((responses) => {
+            generateApplicationData(responses);
+        })
+        .catch((error) => {
+            console.log(error.message.red);
+        });
+});
 
-Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise, collectibleItemsPromise])
-    .then((responses) => {
-        generateApplicationData(responses);
-    })
-    .catch((error) => {
-        console.log(error.message.red);
-    });
 
 function generateApplicationData (responses) {
     console.log('...processing'.yellow);
@@ -231,7 +159,7 @@ function generateApplicationData (responses) {
                             let damageTypeItem = damageTypes[damageTypeHash].displayProperties;
                             damageTypeObject = {
                                 name: damageTypeItem.name,
-                                icon: damageTypeItem.hasIcon ?imageHost + damageTypeItem.icon : null,
+                                icon: damageTypeItem.hasIcon ? damageTypeItem.icon : null,
                                 hash: damageTypeHash
                             };
                         }
@@ -306,7 +234,7 @@ function generateApplicationData (responses) {
                                     perksBucket[hash] = {
                                         name: displayObject.name,
                                         description: displayObject.description,
-                                        icon: displayObject.hasIcon ? imageHost + displayObject.icon : null,
+                                        icon: displayObject.hasIcon ? displayObject.icon : null,
                                         investmentStats: investmentStats,
                                         hash: hash
                                     };
@@ -322,7 +250,7 @@ function generateApplicationData (responses) {
                     reducedWeaponDescription = {
                         displayedProperties: {
                             name: displayedPropertyObject.name,
-                            icon: displayedPropertyObject.hasIcon ? imageHost + displayedPropertyObject.icon : null
+                            icon: displayedPropertyObject.hasIcon ? displayedPropertyObject.icon : null
                         },
                         rarity: {
                             name: weaponDefinition[item].inventory.tierTypeName,
@@ -349,7 +277,7 @@ function generateApplicationData (responses) {
                         stats: statsObject,
                         perks: perksArray,
                         description: displayedPropertyObject.description,
-                        screenshot: weaponDefinition[item].screenshot ? imageHost + weaponDefinition[item].screenshot : null
+                        screenshot: weaponDefinition[item].screenshot ? weaponDefinition[item].screenshot : null
                     }
 
                 } catch (error) {
@@ -387,9 +315,7 @@ function correctDamageTypes(data) {
 
 function generateSocketsData (data) {
     console.log('...weapon sockets processing'.yellow);
-    
     let reducedSockets = {};
-
     for (let socket in data) {
 
         try {
