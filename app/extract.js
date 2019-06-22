@@ -16,6 +16,7 @@ const getUrl = function(url) {
 
 function fetchManifestTables (language) {
     console.log('Tables downloading...'.yellow);
+    console.time('downloading');
     return new Promise((resolve) => {
         fetch(getUrl('/Destiny2/Manifest/'), params)
         .then(response => response.json())
@@ -54,6 +55,7 @@ function fetchManifestTables (language) {
                 return json;
             })
             .then(() => {
+                console.timeEnd('downloading')
                 resolve();
             })
             .catch(error => {
