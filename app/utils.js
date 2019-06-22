@@ -63,6 +63,24 @@ function correctDamageTypes(data) {
     return outputData;
 };
 
+function getAmmoType(slotHash, weaponClassHash) {
+    if (slotHash === 4) {
+        return 3;
+    }
+    var specialHashes = {
+        '9': true,
+        '10': true,
+        '11': true,
+        '153950757': true,
+        '1504945536': true,
+        '2489664120': true
+    };
+    if (specialHashes[weaponClassHash]) {
+        return 2;
+    }
+    return 1;
+};
+
 function generateApplicationData (responses, lang) {
     console.log('...processing'.yellow);
     let reducedWeapon = {};
@@ -213,11 +231,15 @@ function generateApplicationData (responses, lang) {
                             name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name || null,
                             hash: weaponDefinition[item].itemCategoryHashes[0]
                         },
-                        source: sources[item],
-                        class: {
-                            name: categories[weaponDefinition[item].itemCategoryHashes[2]].displayProperties.name || null,
-                            hash: weaponDefinition[item].itemCategoryHashes[2]
+                        source: {
+                            name: sources[item].name,
+                            hash: sources[item].hash,
                         },
+                        class: {
+                            name: weaponDefinition[item].itemTypeDisplayName || null,
+                            hash: weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2]
+                        },
+                        ammoType: getAmmoType(weaponDefinition[item].itemCategoryHashes[0], weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2]),
                         damageType: damageTypeObject,
                         hash: weaponDefinition[item].hash
                     };
@@ -228,6 +250,7 @@ function generateApplicationData (responses, lang) {
                         stats: statsObject,
                         perks: perksArray,
                         description: displayedPropertyObject.description,
+                        source: sources[item].description,
                         screenshot: weaponDefinition[item].screenshot ? weaponDefinition[item].screenshot : null
                     }
 
