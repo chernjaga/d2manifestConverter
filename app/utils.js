@@ -1,5 +1,6 @@
 const color = require('colors');
 const fs = require('fs');
+const seasonMap = require('./seasonMaps');
 
 const activityMap = require('./activityMap');
 
@@ -103,6 +104,11 @@ function generateApplicationData (responses, lang) {
             sources[collectibles[item].itemHash].name = activityMap[lang][collectibles[item].sourceHash];
             sources[collectibles[item].itemHash].description = collectibles[item].sourceString;
             sources[collectibles[item].itemHash].hash = collectibles[item].sourceHash;
+            try {
+                sources[collectibles[item].itemHash].requirements = collectibles[item].stateInfo.requirements.entitlementUnavailableMessage;
+            } catch (e) {
+                console.log('season requirments can not be acuired');
+            }
         }
     } catch (error) {
         console.log('error in source level'.red);
@@ -235,6 +241,9 @@ function generateApplicationData (responses, lang) {
                             name: sources[item].name,
                             hash: sources[item].hash,
                         },
+                        season: {
+                            name: getSeason(weaponDefinition[item].hash, sources[item].requirements, sources[item].hash),
+                        },
                         class: {
                             name: weaponDefinition[item].itemTypeDisplayName || null,
                             hash: weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2]
@@ -278,6 +287,28 @@ function generateApplicationData (responses, lang) {
     console.log('finished'.yellow);
 };
 
+function getSeason(itemHash, requirementsString, activityHash) {
+    var exceptions = seasonMap.exceptions;
+    var seasonActivities = seasonMap.seasonActivities;
+    var requirements = seasonMap.requirements;
+    try {
+        if (exceptions[itemHash]) {
+            return exceptions[itemHash];
+        }
+        if (seasonActivities[activityHash]) {
+            return seasonActivities[activityHash];
+        }
+        if (requirements[requirementsString]) {
+            return requirements[requirementsString];
+        }
+    
+        return 1;
+    } catch (err) {
+        console.log('season isn\'t detected');
+        console.log(err);
+    }
+
+}
 
 module.exports = {
     generateSocketsData: generateSocketsData,
