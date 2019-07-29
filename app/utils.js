@@ -4,6 +4,49 @@ const seasonMap = require('./seasonMaps');
 
 const activityMap = require('./activityMap');
 
+var errorsObj = {
+    errorsSummary: 0,
+    errors: {}
+};
+
+function consoleReport() {
+    console.log(' ');
+    console.log('LOG:'.white);
+    console.log(`Errors summary: ${errorsObj.errorsSummary} errors`.white);
+    console.log(' ');
+    for (let item in errorsObj.errors) {
+        let error = errorsObj.errors[item];
+        console.log(`${item} level: ${error.count}`.white);
+        for (var message in error.msg) {
+            console.log(`    ${message}: ${error.msg[message].count} time(s)`.green);
+            if (error.msg[message].stack) {
+                console.log(`     ${error.msg[message].stack}`.green);
+            }
+        }
+        console.log(' ');
+    }
+}
+
+function errorHandler(message, level, stackTrace) {
+    var isCounterStart = false;
+    errorsObj.errorsSummary = errorsObj.errorsSummary + 1;
+    if (!errorsObj.errors[level]) {
+        errorsObj.errors[level] = {};
+        errorsObj.errors[level].count = 1;
+        isCounterStart = true;
+    }
+    if (!isCounterStart) {
+        errorsObj.errors[level].count = errorsObj.errors[level].count + 1;
+    }
+    if (!errorsObj.errors[level].msg) {
+        errorsObj.errors[level].msg = {};
+        errorsObj.errors[level].msg[message] = {};
+        errorsObj.errors[level].msg[message].count = 1;
+        errorsObj.errors[level].msg[message].stack = stackTrace;
+    } else {
+         errorsObj.errors[level].msg[message].count =  errorsObj.errors[level].msg[message].count + 1;
+    }
+}
 
 
 function generateSocketsData (data) {
@@ -38,17 +81,14 @@ function generateSocketsData (data) {
                         }
 
                     } catch (error) {
-                        console.log('error in investment stats level'.red);
-                        console.log(error.message);
-                    }
-                    
-                    reducedSockets[socket].investmentStats = investmentStats
+                        errorHandler(error.message, 'socket');
+                    }                    
+                    reducedSockets[socket].investmentStats = investmentStats;
                 }
             }
 
         } catch (error) {
-            console.log('error in sockets level'.red);
-            console.log(error.message);
+            errorHandler(error.message, 'sockets');
         }
     }
 
@@ -100,8 +140,10 @@ function generateApplicationData (responses, lang) {
     // src level
     try {
         for (let item in collectibles) {
+            let mappedSrc = activityMap[lang][collectibles[item].sourceHash];
             sources[collectibles[item].itemHash] = {}
-            sources[collectibles[item].itemHash].name = activityMap[lang][collectibles[item].sourceHash];
+            sources[collectibles[item].itemHash].name = mappedSrc ? mappedSrc.section : activityMap[lang].other.section;
+            sources[collectibles[item].itemHash].subSection =  mappedSrc ? mappedSrc.subSection : '';
             sources[collectibles[item].itemHash].description = collectibles[item].sourceString;
             sources[collectibles[item].itemHash].hash = collectibles[item].sourceHash;
             try {
@@ -111,7 +153,7 @@ function generateApplicationData (responses, lang) {
             }
         }
     } catch (error) {
-        console.log('error in source level'.red);
+        errorHandler(error.message, 'source');
     }
 
     for (let item in weaponDefinition) {
@@ -141,8 +183,7 @@ function generateApplicationData (responses, lang) {
                             };
                         }
                     } catch (error) {
-                        console.log('error in damage types level'.red);
-                        console.log(error.message);
+                        errorHandler(error.message, 'damage type');
                     }
 
                     // stats level
@@ -161,8 +202,7 @@ function generateApplicationData (responses, lang) {
                             }
                         };
                     } catch (error) {
-                        console.log('error in stats level'.red);
-                        console.log(error.message);
+                        errorHandler(error.message, 'stats');
                     };
 
                     // perks level
@@ -220,8 +260,7 @@ function generateApplicationData (responses, lang) {
                         }
 
                     } catch (error) {
-                        console.log('error in perks level'.red);
-                        console.log(error.message);
+                        errorHandler(error.message, 'perks');
                     }
 
                     reducedWeaponDescription = {
@@ -264,9 +303,7 @@ function generateApplicationData (responses, lang) {
                     }
 
                 } catch (error) {
-                    console.log('error in displayed properties level'.red);
-                    console.log(error.message);
-                    console.log('..................'.green);
+                    errorHandler(error.message, 'displayed properties', error.stack);
                 };
             }
         
@@ -285,6 +322,7 @@ function generateApplicationData (responses, lang) {
 
     console.timeEnd('completed');
     console.log('finished'.yellow);
+    consoleReport();
 };
 
 function getSeason(itemHash, requirementsString, activityHash) {
