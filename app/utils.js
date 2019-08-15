@@ -146,10 +146,11 @@ function generateApplicationData (responses, lang) {
             sources[collectibles[item].itemHash].subSection =  mappedSrc ? mappedSrc.subSection : '';
             sources[collectibles[item].itemHash].description = collectibles[item].sourceString;
             sources[collectibles[item].itemHash].hash = collectibles[item].sourceHash;
+            sources[collectibles[item].itemHash].bindTo = mappedSrc ? mappedSrc.bindTo : activityMap[lang].other.section;
             try {
                 sources[collectibles[item].itemHash].requirements = collectibles[item].stateInfo.requirements.entitlementUnavailableMessage;
             } catch (e) {
-                console.log('season requirments can not be acuired');
+                console.log('season requirements can not be acquired');
             }
         }
     } catch (error) {
@@ -279,7 +280,14 @@ function generateApplicationData (responses, lang) {
                         source: {
                             name: sources[item].name,
                             hash: sources[item].hash,
+                            bindTo: sources[item].bindTo,
+                            description: sources[item].description
                         },
+                        subSource: {
+                            name: sources[item].subSection,
+                            hash: sources[item].hash,
+                        },
+                        hasSubSource: !!sources[item].subSection,
                         season: {
                             name: getSeason(weaponDefinition[item].hash, sources[item].requirements, sources[item].hash),
                         },
