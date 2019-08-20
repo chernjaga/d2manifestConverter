@@ -334,6 +334,7 @@ module.exports = {
         },
         1483048674: {
             section:'Raids',sectionHash: 3,
+            bindTo: 'Exotic',
             subSection : 'Scourge of the Past'
         },
         2641169841: {

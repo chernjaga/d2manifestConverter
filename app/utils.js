@@ -264,7 +264,10 @@ function generateApplicationData (responses, lang) {
                     } catch (error) {
                         errorHandler(error.message, 'perks');
                     }
-
+                    let bindToVar = sources[item].bindTo;
+                    if (sources[item].sectionHash === 3 && weaponDefinition[item].inventory.tierType === 6) {
+                        bindToVar = weaponDefinition[item].inventory.tierTypeName;
+                    }
                     reducedWeaponDescription = {
                         displayedProperties: {
                             name: displayedPropertyObject.name,
@@ -281,14 +284,13 @@ function generateApplicationData (responses, lang) {
                         source: {
                             name: sources[item].name,
                             sectionHash: sources[item].sectionHash,
-                            bindTo: sources[item].bindTo,
+                            bindTo: bindToVar,
                             description: sources[item].description
                         },
                         subSource: {
                             name: sources[item].subSection,
                             hash: sources[item].hash,
                         },
-                        hasSubSource: !!sources[item].subSection,
                         season: {
                             name: getSeason(weaponDefinition[item].hash, sources[item].requirements, sources[item].hash),
                         },
