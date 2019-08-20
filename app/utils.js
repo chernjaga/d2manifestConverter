@@ -301,7 +301,7 @@ function generateApplicationData (responses, lang) {
                             hash: sources[item].hash,
                         };
                     } else {
-
+                        throw new Error ('item is not valid');
                     }
                     reducedWeaponDescription = {
                         displayedProperties: {
