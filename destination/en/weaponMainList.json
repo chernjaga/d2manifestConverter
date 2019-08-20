@@ -184,6 +184,34 @@
         },
         "hash": 48361213
     },
+    "53159280": {
+        "displayedProperties": {
+            "name": "Traveler's Chosen",
+            "icon": "/common/destiny2_content/icons/136dca04c483083128c19c5b3b2b1d5d.jpg"
+        },
+        "rarity": {
+            "name": "Common",
+            "hash": 2
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Sidearm",
+            "hash": 14
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Kinetic",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_3385a924fd3ccb92c343ade19f19a370.png",
+            "hash": 3373582085
+        },
+        "hash": 53159280
+    },
     "53159281": {
         "displayedProperties": {
             "name": "Traveler's Chosen (Damaged)",
@@ -1591,6 +1619,34 @@
         },
         "hash": 308332265
     },
+    "311852248": {
+        "displayedProperties": {
+            "name": "Bushwhacker",
+            "icon": "/common/destiny2_content/icons/5fb93fe83a7ff7560763d2b70e07d899.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Power Weapon",
+            "hash": 4
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Grenade Launcher",
+            "hash": 153950757
+        },
+        "ammoType": 3,
+        "damageType": {
+            "name": "Void",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_290040c1025b9f7045366c1c7823da6a.png",
+            "hash": 3454344768
+        },
+        "hash": 311852248
+    },
     "324382200": {
         "displayedProperties": {
             "name": "Breakneck",
@@ -2222,6 +2278,30 @@
         },
         "hash": 432716552
     },
+    "460724140": {
+        "displayedProperties": {
+            "name": "The Jade Rabbit",
+            "icon": "/common/destiny2_content/icons/65a42d35f066e7c06861a1a416388f4b.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Scout Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 460724140
+    },
     "468276817": {
         "displayedProperties": {
             "name": "Nature of the Beast",
@@ -2553,6 +2633,30 @@
             "hash": 3373582085
         },
         "hash": 541053086
+    },
+    "546372301": {
+        "displayedProperties": {
+            "name": "The Jade Rabbit",
+            "icon": "/common/destiny2_content/icons/65a42d35f066e7c06861a1a416388f4b.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Scout Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 546372301
     },
     "566976652": {
         "displayedProperties": {
@@ -3478,6 +3582,30 @@
             "hash": 3373582085
         },
         "hash": 689453941
+    },
+    "695814388": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 695814388
     },
     "701922966": {
         "displayedProperties": {
@@ -8210,6 +8338,34 @@
         },
         "hash": 1595336070
     },
+    "1595336071": {
+        "displayedProperties": {
+            "name": "Presto-48",
+            "icon": "/common/destiny2_content/icons/3cb883be872ea045e8232473d0245c89.jpg"
+        },
+        "rarity": {
+            "name": "Rare",
+            "hash": 4
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 6
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Solar",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png",
+            "hash": 1847026933
+        },
+        "hash": 1595336071
+    },
     "1600633250": {
         "displayedProperties": {
             "name": "21% Delirium",
@@ -8358,6 +8514,34 @@
             "hash": 3373582085
         },
         "hash": 1644162710
+    },
+    "1648316470": {
+        "displayedProperties": {
+            "name": "Timecard",
+            "icon": "/common/destiny2_content/icons/4c303437a842ddd8f5c98dd32da68803.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Sidearm",
+            "hash": 14
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Arc",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_9fbcfcef99f4e8a40d8762ccb556fcd4.png",
+            "hash": 2303181850
+        },
+        "hash": 1648316470
     },
     "1650442173": {
         "displayedProperties": {
@@ -8951,6 +9135,58 @@
         },
         "hash": 1684914716
     },
+    "1699493316": {
+        "displayedProperties": {
+            "name": "The Last Dance",
+            "icon": "/common/destiny2_content/icons/9b7ef2227d2f7fb5fc45cabe31069eaa.jpg"
+        },
+        "rarity": {
+            "name": "Common",
+            "hash": 2
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Sidearm",
+            "hash": 14
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Solar",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_2a1773e10968f2d088b97c22b22bba9e.png",
+            "hash": 1847026933
+        },
+        "hash": 1699493316
+    },
+    "1702618248": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 1702618248
+    },
     "1706536806": {
         "displayedProperties": {
             "name": "The Old Fashioned",
@@ -9061,6 +9297,34 @@
             "hash": 2303181850
         },
         "hash": 1723472487
+    },
+    "1744115122": {
+        "displayedProperties": {
+            "name": "Legend of Acrius",
+            "icon": "/common/destiny2_content/icons/004c2130748b20a282d837d14a3cb104.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Power Weapon",
+            "hash": 4
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Shotgun",
+            "hash": 11
+        },
+        "ammoType": 3,
+        "damageType": {
+            "name": "Arc",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_9fbcfcef99f4e8a40d8762ccb556fcd4.png",
+            "hash": 2303181850
+        },
+        "hash": 1744115122
     },
     "1752585070": {
         "displayedProperties": {
@@ -9394,6 +9658,30 @@
             "hash": 2303181850
         },
         "hash": 1825472717
+    },
+    "1833744687": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 1833744687
     },
     "1839565992": {
         "displayedProperties": {
@@ -11506,6 +11794,30 @@
         },
         "hash": 2145476623
     },
+    "2146650065": {
+        "displayedProperties": {
+            "name": "Prometheus Lens",
+            "icon": "/common/destiny2_content/icons/b61299ff11d37d5b637d716e8ef3be72.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Trace Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2146650065
+    },
     "2149166938": {
         "displayedProperties": {
             "name": "Classical-42",
@@ -12061,6 +12373,30 @@
         },
         "hash": 2248667690
     },
+    "2251716886": {
+        "displayedProperties": {
+            "name": "Qingming Offering",
+            "icon": "/common/destiny2_content/icons/1214bd940525578395237b691d434a97.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Weapon Ornament",
+            "hash": 56
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2251716886
+    },
     "2276266837": {
         "displayedProperties": {
             "name": "Honor's Edge",
@@ -12282,6 +12618,30 @@
             "hash": 3454344768
         },
         "hash": 2295941921
+    },
+    "2319004329": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2319004329
     },
     "2326716489": {
         "displayedProperties": {
@@ -12875,6 +13235,30 @@
             "hash": 3454344768
         },
         "hash": 2478247171
+    },
+    "2482526262": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2482526262
     },
     "2502422772": {
         "displayedProperties": {
@@ -13837,6 +14221,30 @@
         },
         "hash": 2625782213
     },
+    "2650944612": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2650944612
+    },
     "2653316158": {
         "displayedProperties": {
             "name": "Pillager",
@@ -13984,6 +14392,34 @@
             "hash": 2303181850
         },
         "hash": 2683682446
+    },
+    "2683682447": {
+        "displayedProperties": {
+            "name": "Traitor's Fate",
+            "icon": "/common/destiny2_content/icons/2847efc7413f6cce903c52bcf8ceaa37.jpg"
+        },
+        "rarity": {
+            "name": "Common",
+            "hash": 2
+        },
+        "slot": {
+            "name": "Power Weapon",
+            "hash": 4
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Sword",
+            "hash": 54
+        },
+        "ammoType": 3,
+        "damageType": {
+            "name": "Arc",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_9fbcfcef99f4e8a40d8762ccb556fcd4.png",
+            "hash": 2303181850
+        },
+        "hash": 2683682447
     },
     "2693941407": {
         "displayedProperties": {
@@ -14353,6 +14789,30 @@
             "hash": 1847026933
         },
         "hash": 2703340117
+    },
+    "2703446873": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2703446873
     },
     "2707464805": {
         "displayedProperties": {
@@ -15205,6 +15665,30 @@
         },
         "hash": 2891976013
     },
+    "2896466320": {
+        "displayedProperties": {
+            "name": "The Jade Rabbit",
+            "icon": "/common/destiny2_content/icons/65a42d35f066e7c06861a1a416388f4b.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Scout Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2896466320
+    },
     "2903592984": {
         "displayedProperties": {
             "name": "Lionheart",
@@ -15241,6 +15725,34 @@
             "hash": 3373582085
         },
         "hash": 2903592984
+    },
+    "2903592986": {
+        "displayedProperties": {
+            "name": "Rebuke AX-GL",
+            "icon": "/common/destiny2_content/icons/5bb01d1c8a28b19aa50de6c647dcbe7b.jpg"
+        },
+        "rarity": {
+            "name": "Rare",
+            "hash": 4
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Auto Rifle",
+            "hash": 5
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Kinetic",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_3385a924fd3ccb92c343ade19f19a370.png",
+            "hash": 3373582085
+        },
+        "hash": 2903592986
     },
     "2903592987": {
         "displayedProperties": {
@@ -15686,6 +16198,30 @@
             "hash": 2303181850
         },
         "hash": 2961807684
+    },
+    "2978016230": {
+        "displayedProperties": {
+            "name": "The Jade Rabbit",
+            "icon": "/common/destiny2_content/icons/65a42d35f066e7c06861a1a416388f4b.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Scout Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 2978016230
     },
     "3005104939": {
         "displayedProperties": {
@@ -16570,6 +17106,30 @@
             "hash": 1847026933
         },
         "hash": 3222518097
+    },
+    "3229272315": {
+        "displayedProperties": {
+            "name": "The Jade Rabbit",
+            "icon": "/common/destiny2_content/icons/65a42d35f066e7c06861a1a416388f4b.jpg"
+        },
+        "rarity": {
+            "name": "Exotic",
+            "hash": 6
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Scout Rifle",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 3229272315
     },
     "3239754990": {
         "displayedProperties": {
@@ -20450,6 +21010,30 @@
         },
         "hash": 3854359821
     },
+    "3856940575": {
+        "displayedProperties": {
+            "name": "Trust",
+            "icon": "/common/destiny2_content/icons/09d614a6136d68995331620f1e208293.jpg"
+        },
+        "rarity": {
+            "name": "Legendary",
+            "hash": 5
+        },
+        "slot": {
+            "name": "Energy Weapon",
+            "hash": 3
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Hand Cannon",
+            "hash": 3109687656
+        },
+        "ammoType": 1,
+        "damageType": {},
+        "hash": 3856940575
+    },
     "3860697508": {
         "displayedProperties": {
             "name": "Minuet-42",
@@ -21447,6 +22031,34 @@
             "hash": 2303181850
         },
         "hash": 4014434381
+    },
+    "4024037919": {
+        "displayedProperties": {
+            "name": "Origin Story",
+            "icon": "/common/destiny2_content/icons/25922a9b05e266704b9cf30ec44888da.jpg"
+        },
+        "rarity": {
+            "name": "Common",
+            "hash": 2
+        },
+        "slot": {
+            "name": "Kinetic Weapon",
+            "hash": 2
+        },
+        "season": {
+            "name": 1
+        },
+        "class": {
+            "name": "Auto Rifle",
+            "hash": 5
+        },
+        "ammoType": 1,
+        "damageType": {
+            "name": "Kinetic",
+            "icon": "/common/destiny2_content/icons/DestinyDamageTypeDefinition_3385a924fd3ccb92c343ade19f19a370.png",
+            "hash": 3373582085
+        },
+        "hash": 4024037919
     },
     "4036115577": {
         "displayedProperties": {

@@ -136,7 +136,9 @@ function generateApplicationData (responses, lang) {
     let categories = responses[5];
     let collectibles = responses[6];
     let sources = {};
-
+    let exceptionObject = {
+        requirement: null
+    };
     // src level
     try {
         for (let item in collectibles) {
@@ -149,9 +151,17 @@ function generateApplicationData (responses, lang) {
             sources[collectibles[item].itemHash].hash = collectibles[item].sourceHash;
             sources[collectibles[item].itemHash].bindTo = mappedSrc ? mappedSrc.bindTo : activityMap[lang].other.section;
             try {
-                sources[collectibles[item].itemHash].requirements = collectibles[item].stateInfo.requirements.entitlementUnavailableMessage;
+                let requirement = collectibles[item];
+                exceptionObject.requirement = requirement;
+                if (requirement.itemHash === 0 && requirement.scope === 0) {
+                    sources[collectibles[item].itemHash].requirements = requirement.displayProperties.description;
+                } else {
+                    sources[collectibles[item].itemHash].requirements = collectibles[item].stateInfo.requirements.entitlementUnavailableMessage;
+                }
             } catch (e) {
                 console.log('season requirements can not be acquired');
+                console.log(exceptionObject.requirement);
+                console.log(' ');
             }
         }
     } catch (error) {
@@ -264,9 +274,34 @@ function generateApplicationData (responses, lang) {
                     } catch (error) {
                         errorHandler(error.message, 'perks');
                     }
-                    let bindToVar = sources[item].bindTo;
-                    if (sources[item].sectionHash === 3 && weaponDefinition[item].inventory.tierType === 6) {
-                        bindToVar = weaponDefinition[item].inventory.tierTypeName;
+                    let bindToVar;
+                    let srcObject, subSrcObject, srcDescription;
+                    let requirementsObj;
+                    let srcHash;
+                    if (sources[item]) {
+                        if (sources[item].sectionHash === 3 && weaponDefinition[item].inventory.tierType === 6) {
+                            bindToVar = activityMap[lang][1563875874].section;
+                        } else {
+                            bindToVar = sources[item].bindTo;
+                        }
+                        requirementsObj = sources[item].requirements;
+                        srcHash = sources[item].hash;
+                        srcDescription = sources[item].description;
+                    }
+
+                    if (sources[item]) {
+                        srcObject = {
+                            name: sources[item].name,
+                            sectionHash: sources[item].sectionHash,
+                            bindTo: bindToVar,
+                            description: sources[item].description
+                        };
+                        subSrcObject = {
+                            name: sources[item].subSection,
+                            hash: sources[item].hash,
+                        };
+                    } else {
+
                     }
                     reducedWeaponDescription = {
                         displayedProperties: {
@@ -281,18 +316,10 @@ function generateApplicationData (responses, lang) {
                             name: categories[weaponDefinition[item].itemCategoryHashes[0]].displayProperties.name || null,
                             hash: weaponDefinition[item].itemCategoryHashes[0]
                         },
-                        source: {
-                            name: sources[item].name,
-                            sectionHash: sources[item].sectionHash,
-                            bindTo: bindToVar,
-                            description: sources[item].description
-                        },
-                        subSource: {
-                            name: sources[item].subSection,
-                            hash: sources[item].hash,
-                        },
+                        source: srcObject,
+                        subSource: subSrcObject,
                         season: {
-                            name: getSeason(weaponDefinition[item].hash, sources[item].requirements, sources[item].hash),
+                            name: getSeason(weaponDefinition[item].hash, requirementsObj, srcHash),
                         },
                         class: {
                             name: weaponDefinition[item].itemTypeDisplayName || null,
@@ -309,7 +336,7 @@ function generateApplicationData (responses, lang) {
                         stats: statsObject,
                         perks: perksArray,
                         description: displayedPropertyObject.description,
-                        source: sources[item].description,
+                        source: srcDescription,
                         screenshot: weaponDefinition[item].screenshot ? weaponDefinition[item].screenshot : null
                     }
 
