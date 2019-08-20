@@ -14,7 +14,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -52,7 +52,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -90,7 +90,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -128,7 +128,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -166,7 +166,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -204,7 +204,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 569214265,
+            "sectionHash": 9,
             "description": "Source: Earned over the course of the Red War campaign."
         },
         "subSource": {
@@ -242,7 +242,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -280,7 +279,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3952847349,
+            "sectionHash": 8,
             "description": "Source: The Dawning 2018."
         },
         "subSource": {
@@ -318,7 +317,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -356,7 +355,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -394,7 +393,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -432,7 +431,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -470,7 +469,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -508,7 +507,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -546,7 +545,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2537301256,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Reach a Glory rank of \"Fabled\" in the Crucible."
         },
@@ -585,7 +584,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -623,7 +622,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 598662729,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Reach Glory Rank \"Legend\" in the Crucible."
         },
@@ -662,7 +661,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -700,7 +699,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -738,7 +737,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -776,7 +775,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -814,7 +813,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -852,7 +851,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 2641169841,
+            "sectionHash": 1,
             "description": "Source: Purchased from Lord Shaxx."
         },
         "subSource": {
@@ -890,7 +889,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2537301256,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Reach a Glory rank of \"Fabled\" in the Crucible."
         },
@@ -929,7 +928,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -967,7 +966,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -1006,7 +1005,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -1044,7 +1043,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -1082,7 +1081,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -1120,7 +1119,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -1158,7 +1156,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 110159004,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"Warden of Nothing.\""
         },
         "subSource": {
@@ -1196,7 +1194,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -1234,7 +1232,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 569214265,
+            "sectionHash": 9,
             "description": "Source: Earned over the course of the Red War campaign."
         },
         "subSource": {
@@ -1272,7 +1270,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -1310,7 +1307,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -1348,7 +1345,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -1386,7 +1383,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -1424,7 +1421,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -1462,7 +1459,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -1500,7 +1497,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -1538,7 +1535,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 798957490,
+            "sectionHash": 9,
             "description": "Source: Complete wanted escapee bounties for the Spider."
         },
         "subSource": {
@@ -1576,7 +1573,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -1614,7 +1611,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -1652,7 +1649,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2883838366,
+            "sectionHash": 4,
             "bindTo": "Gambit",
             "description": "Source: Complete the \"Breakneck\" quest from the Drifter."
         },
@@ -1691,7 +1688,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -1729,7 +1726,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -1767,7 +1764,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -1805,7 +1802,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -1843,7 +1839,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -1881,7 +1876,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -1919,7 +1914,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -1958,7 +1953,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 636474187,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Deathless\" on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -1996,7 +1991,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -2035,7 +2030,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -2073,7 +2068,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -2112,7 +2107,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -2150,7 +2145,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -2188,7 +2183,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -2226,7 +2221,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -2264,7 +2259,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -2302,7 +2297,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -2340,7 +2335,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -2378,7 +2373,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -2416,7 +2411,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -2454,7 +2449,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -2492,7 +2487,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -2530,7 +2524,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -2568,7 +2562,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -2606,7 +2600,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -2644,7 +2638,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -2682,7 +2675,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -2720,7 +2712,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -2758,7 +2749,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -2796,7 +2787,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -2834,7 +2825,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -2872,7 +2863,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -2910,7 +2901,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1144274899,
+            "sectionHash": 4,
             "bindTo": "Vanguard",
             "description": "Source: Complete this weapon's associated Vanguard quest."
         },
@@ -2949,7 +2940,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1244908294,
+            "sectionHash": 4,
             "bindTo": "Vanguard",
             "description": "Source: Complete the \"Loaded Question\" quest from Zavala."
         },
@@ -2988,7 +2979,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -3026,7 +3017,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -3064,7 +3055,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -3102,7 +3093,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -3140,7 +3131,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -3178,7 +3169,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -3216,7 +3207,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -3254,7 +3245,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -3292,7 +3283,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3330,7 +3321,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3368,7 +3359,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3406,7 +3397,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3444,7 +3435,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -3482,7 +3473,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2821852478,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Complete this weapon's associated Crucible quest."
         },
@@ -3521,7 +3512,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -3559,7 +3550,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -3597,7 +3588,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -3635,7 +3626,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -3673,7 +3664,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3711,7 +3702,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3749,7 +3740,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3787,7 +3778,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -3825,7 +3816,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -3863,7 +3854,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2310754348,
+            "sectionHash": 4,
             "description": "Source: World Quest \"Data Recovery\" on Mars."
         },
         "subSource": {
@@ -3901,7 +3892,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 798957490,
+            "sectionHash": 9,
             "description": "Source: Complete wanted escapee bounties for the Spider."
         },
         "subSource": {
@@ -3939,7 +3930,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -3977,7 +3968,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -4015,7 +4006,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -4053,7 +4044,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -4091,7 +4082,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -4129,7 +4120,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -4167,7 +4158,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -4205,7 +4196,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -4243,7 +4234,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 2895784523,
+            "sectionHash": 8,
             "description": "Source: Pledge to all factions on a single character."
         },
         "subSource": {
@@ -4281,7 +4272,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -4319,7 +4310,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -4358,7 +4349,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -4396,7 +4387,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -4434,7 +4425,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -4472,7 +4463,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -4510,7 +4501,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -4548,7 +4539,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 4137108180,
+            "sectionHash": 9,
             "description": "Source: Escalation Protocol on Mars."
         },
         "subSource": {
@@ -4586,7 +4577,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -4624,7 +4614,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -4662,7 +4652,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -4700,7 +4689,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -4738,7 +4726,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -4776,7 +4763,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -4814,7 +4801,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -4852,7 +4839,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -4890,7 +4877,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2717017239,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"The Pyramidion.\""
         },
         "subSource": {
@@ -4928,7 +4915,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -4966,7 +4953,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -5004,7 +4991,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -5042,7 +5029,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -5080,7 +5067,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -5118,7 +5105,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 3874934421,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"The Corrupted.\""
         },
         "subSource": {
@@ -5156,7 +5143,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -5194,7 +5181,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -5232,7 +5219,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -5270,7 +5257,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -5308,7 +5295,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -5346,7 +5333,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -5384,7 +5371,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -5422,7 +5409,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -5460,7 +5447,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -5498,7 +5485,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -5536,7 +5523,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -5574,7 +5561,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -5612,7 +5599,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -5650,7 +5637,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -5688,7 +5675,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -5726,7 +5713,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 4290499613,
+            "sectionHash": 9,
             "description": "Source: Complete the campaign as a Hunter."
         },
         "subSource": {
@@ -5764,7 +5751,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 677167936,
+            "sectionHash": 9,
             "description": "Source: Complete the campaign as a Warlock."
         },
         "subSource": {
@@ -5802,7 +5789,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3099553329,
+            "sectionHash": 9,
             "description": "Source: Complete the campaign as a Titan."
         },
         "subSource": {
@@ -5840,7 +5827,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -5878,7 +5865,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -5916,7 +5903,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2553369674,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Exodus Siege\" on Nessus."
         },
         "subSource": {
@@ -5954,7 +5941,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1736997121,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Stop and Go\" in the European Dead Zone."
         },
         "subSource": {
@@ -5992,7 +5979,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 569214265,
+            "sectionHash": 9,
             "description": "Source: Earned over the course of the Red War campaign."
         },
         "subSource": {
@@ -6030,7 +6017,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -6068,7 +6055,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -6107,7 +6094,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6145,7 +6132,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -6183,7 +6170,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -6221,7 +6208,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6259,7 +6246,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6297,7 +6284,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6335,7 +6322,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6373,7 +6360,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 3147603678,
+            "sectionHash": 3,
             "description": "Acquired from the raid \"Crown of Sorrow.\""
         },
         "subSource": {
@@ -6411,7 +6398,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -6449,7 +6436,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6487,7 +6474,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -6525,7 +6512,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -6563,7 +6550,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -6601,7 +6588,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -6639,7 +6626,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -6678,7 +6665,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -6716,7 +6703,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -6754,7 +6741,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -6792,7 +6779,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -6830,7 +6817,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -6868,7 +6855,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -6906,7 +6893,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -6944,7 +6931,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -6983,7 +6970,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -7021,7 +7008,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -7059,7 +7046,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -7097,7 +7084,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7135,7 +7122,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7173,7 +7160,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7211,7 +7198,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -7249,7 +7236,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -7287,7 +7273,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -7325,7 +7311,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7363,7 +7349,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7401,7 +7387,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -7439,7 +7425,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7477,7 +7463,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7515,7 +7501,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -7553,7 +7539,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 354493557,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"Savathûn's Song.\""
         },
         "subSource": {
@@ -7591,7 +7577,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -7629,7 +7615,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -7667,7 +7653,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -7705,7 +7691,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 3147603678,
+            "sectionHash": 3,
             "description": "Acquired from the raid \"Crown of Sorrow.\""
         },
         "subSource": {
@@ -7743,7 +7729,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2345202459,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Invitation from the Emperor\" on Nessus."
         },
         "subSource": {
@@ -7781,7 +7767,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -7819,7 +7805,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -7857,7 +7843,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -7895,7 +7881,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -7933,7 +7919,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -7971,7 +7957,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -8009,7 +7995,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -8047,7 +8032,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -8085,7 +8069,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -8123,7 +8107,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -8161,7 +8145,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -8199,7 +8182,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -8237,7 +8219,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -8275,7 +8256,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -8313,7 +8294,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 594786771,
+            "sectionHash": 4,
             "bindTo": "Gambit",
             "description": "Source: Complete this weapon's associated Gambit quest."
         },
@@ -8352,7 +8333,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -8390,7 +8371,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -8428,7 +8409,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1067250718,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Arecibo\" on Io."
         },
         "subSource": {
@@ -8466,7 +8447,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 594786771,
+            "sectionHash": 4,
             "bindTo": "Gambit",
             "description": "Source: Complete this weapon's associated Gambit quest."
         },
@@ -8505,7 +8486,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -8543,7 +8524,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -8581,7 +8562,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -8619,7 +8600,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -8657,7 +8638,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8695,7 +8676,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8733,7 +8714,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8771,7 +8752,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8809,7 +8790,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 4246883461,
+            "sectionHash": 3,
             "description": "Source: Found in the \"Scourge of the Past\" raid."
         },
         "subSource": {
@@ -8847,7 +8828,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8885,7 +8866,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8923,7 +8904,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8961,7 +8942,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -8999,7 +8980,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -9037,7 +9018,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -9075,7 +9056,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -9113,7 +9094,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -9151,7 +9132,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -9189,7 +9170,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -9227,7 +9208,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -9265,7 +9246,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -9303,7 +9284,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 4137108180,
+            "sectionHash": 9,
             "description": "Source: Escalation Protocol on Mars."
         },
         "subSource": {
@@ -9341,7 +9322,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -9379,7 +9360,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -9417,7 +9398,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -9455,7 +9436,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -9493,7 +9474,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -9531,7 +9512,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -9569,7 +9550,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -9607,7 +9588,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -9645,7 +9626,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -9683,7 +9664,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -9721,7 +9702,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -9759,7 +9740,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -9797,7 +9778,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -9835,7 +9816,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -9873,7 +9854,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -9912,7 +9893,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -9950,7 +9931,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -9988,7 +9969,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -10026,7 +10006,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -10064,7 +10044,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -10102,7 +10082,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -10140,7 +10120,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -10178,7 +10158,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -10216,7 +10196,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -10254,7 +10234,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 4137108180,
+            "sectionHash": 9,
             "description": "Source: Escalation Protocol on Mars."
         },
         "subSource": {
@@ -10292,7 +10272,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -10331,7 +10311,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -10369,7 +10349,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -10407,7 +10387,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -10445,7 +10425,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -10483,7 +10463,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -10521,7 +10501,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -10559,7 +10539,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2926805810,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"Strange Terrain.\""
         },
         "subSource": {
@@ -10597,7 +10577,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 4246883461,
+            "sectionHash": 3,
             "description": "Source: Found in the \"Scourge of the Past\" raid."
         },
         "subSource": {
@@ -10635,7 +10615,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -10673,7 +10653,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -10711,7 +10691,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -10749,7 +10729,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -10787,7 +10767,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -10825,7 +10805,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -10863,7 +10843,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -10901,7 +10881,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -10939,7 +10919,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -10977,7 +10957,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -11015,7 +10995,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -11053,7 +11033,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -11091,7 +11071,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -11129,7 +11109,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 2502262376,
+            "sectionHash": 8,
             "description": "Source: Earned during the seasonal Crimson Days event."
         },
         "subSource": {
@@ -11167,7 +11147,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -11205,7 +11185,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -11243,7 +11223,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -11281,7 +11261,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -11319,7 +11299,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -11357,7 +11337,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -11395,7 +11375,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -11433,7 +11413,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 1675483099,
+            "sectionHash": 3,
             "description": "Source: Leviathan, Spire of Stars raid lair."
         },
         "subSource": {
@@ -11471,7 +11451,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -11509,7 +11489,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -11547,7 +11527,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -11585,7 +11565,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -11623,7 +11603,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -11661,7 +11641,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -11699,7 +11679,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -11737,7 +11717,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -11775,7 +11755,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -11813,7 +11793,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -11851,7 +11831,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -11889,7 +11869,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1654120320,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mercury."
         },
         "subSource": {
@@ -11927,7 +11907,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 3022766747,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"The Insight Terminus.\""
         },
         "subSource": {
@@ -11965,7 +11945,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -12003,7 +11983,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -12041,7 +12021,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 4246883461,
+            "sectionHash": 3,
             "description": "Source: Found in the \"Scourge of the Past\" raid."
         },
         "subSource": {
@@ -12079,7 +12059,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -12117,7 +12097,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -12155,7 +12135,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12193,7 +12173,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12231,7 +12211,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12269,7 +12249,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12307,7 +12287,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12345,7 +12325,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -12383,7 +12363,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -12421,7 +12401,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -12459,7 +12439,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -12497,7 +12477,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -12535,7 +12515,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -12573,7 +12553,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -12611,7 +12591,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1654120320,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mercury."
         },
         "subSource": {
@@ -12649,7 +12629,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -12687,7 +12667,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 3147603678,
+            "sectionHash": 3,
             "description": "Acquired from the raid \"Crown of Sorrow.\""
         },
         "subSource": {
@@ -12725,7 +12705,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12763,7 +12743,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12801,7 +12781,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12839,7 +12819,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -12877,7 +12857,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 164571094,
+            "sectionHash": 4,
             "description": "Source: World Quest \"Exodus Black\" on Nessus."
         },
         "subSource": {
@@ -12915,7 +12895,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -12954,7 +12934,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 1483048674,
+            "sectionHash": 3,
             "description": "Source: Complete the \"Scourge of the Past\" raid."
         },
         "subSource": {
@@ -12992,7 +12972,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -13030,7 +13009,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -13068,7 +13047,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -13106,7 +13085,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -13144,7 +13123,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -13182,7 +13161,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -13220,7 +13199,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -13258,7 +13237,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -13296,7 +13275,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -13334,7 +13313,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -13372,7 +13351,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -13410,7 +13389,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -13448,7 +13427,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -13486,7 +13465,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -13524,7 +13503,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1701477406,
+            "sectionHash": 9,
             "description": "Source: Flashpoint milestones; Legendary engrams."
         },
         "subSource": {
@@ -13562,7 +13541,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -13600,7 +13579,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -13638,7 +13617,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13676,7 +13655,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13714,7 +13693,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -13752,7 +13730,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -13790,7 +13768,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -13828,7 +13806,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13866,7 +13844,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13904,7 +13882,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13942,7 +13920,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -13980,7 +13958,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14018,7 +13996,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14056,7 +14034,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14094,7 +14072,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -14132,7 +14110,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -14170,7 +14148,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -14208,7 +14186,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -14246,7 +14224,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -14284,7 +14262,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -14322,7 +14300,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -14360,7 +14338,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 639650067,
+            "sectionHash": 9,
             "description": "Source: Limited Edition of Destiny 2."
         },
         "subSource": {
@@ -14398,7 +14376,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -14436,7 +14414,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14474,7 +14452,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14512,7 +14490,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14550,7 +14528,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14588,7 +14566,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -14626,7 +14604,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -14664,7 +14642,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -14702,7 +14680,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -14740,7 +14718,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -14778,7 +14755,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2937902448,
+            "sectionHash": 3,
             "description": "Source: Leviathan, Eater of Worlds raid lair."
         },
         "subSource": {
@@ -14816,7 +14793,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -14854,7 +14831,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -14892,7 +14869,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -14930,7 +14907,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -14968,7 +14945,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -15006,7 +14983,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 4246883461,
+            "sectionHash": 3,
             "description": "Source: Found in the \"Scourge of the Past\" raid."
         },
         "subSource": {
@@ -15044,7 +15021,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -15082,7 +15059,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1654120320,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mercury."
         },
         "subSource": {
@@ -15120,7 +15097,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -15158,7 +15135,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -15196,7 +15173,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -15234,7 +15211,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -15272,7 +15249,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3427537854,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Road Rage\" on Io."
         },
         "subSource": {
@@ -15310,7 +15287,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 783399508,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Supply and Demand\" in the European Dead Zone."
         },
         "subSource": {
@@ -15348,7 +15325,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -15386,7 +15363,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -15424,7 +15401,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15462,7 +15439,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15500,7 +15477,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15538,7 +15515,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15576,7 +15553,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15614,7 +15591,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -15652,7 +15629,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 482012099,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Thief of Thieves\" on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -15690,7 +15667,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1289998337,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Hack the Planet\" on Nessus."
         },
         "subSource": {
@@ -15728,7 +15705,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -15767,7 +15744,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -15805,7 +15782,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -15843,7 +15820,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -15881,7 +15858,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -15919,7 +15896,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1893377622,
+            "sectionHash": 9,
             "description": "Source: Adventure \"No Safe Distance\" in the European Dead Zone."
         },
         "subSource": {
@@ -15957,7 +15934,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1861838843,
+            "sectionHash": 9,
             "description": "Source: Adventure \"A Frame Job\" in the European Dead Zone."
         },
         "subSource": {
@@ -15995,7 +15972,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 569214265,
+            "sectionHash": 9,
             "description": "Source: Earned over the course of the Red War campaign."
         },
         "subSource": {
@@ -16033,7 +16010,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -16071,7 +16048,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -16109,7 +16086,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -16147,7 +16124,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -16185,7 +16162,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -16223,7 +16199,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -16261,7 +16236,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -16299,7 +16273,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -16337,7 +16310,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -16375,7 +16348,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 4292996207,
+            "sectionHash": 4,
             "description": "Source: World Quest \"Enhance!\" in the European Dead Zone."
         },
         "subSource": {
@@ -16413,7 +16386,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -16451,7 +16424,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -16489,7 +16462,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 3147603678,
+            "sectionHash": 3,
             "description": "Acquired from the raid \"Crown of Sorrow.\""
         },
         "subSource": {
@@ -16527,7 +16500,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -16565,7 +16538,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -16603,7 +16576,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -16641,7 +16614,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -16679,7 +16652,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -16717,7 +16690,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -16755,7 +16728,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -16793,7 +16766,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -16831,7 +16804,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -16869,7 +16842,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -16907,7 +16880,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -16945,7 +16917,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -16984,7 +16956,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -17022,7 +16993,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -17060,7 +17031,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -17098,7 +17069,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -17136,7 +17107,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -17174,7 +17145,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -17212,7 +17183,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -17250,7 +17221,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 146504277,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Arach Jalaal."
         },
         "subSource": {
@@ -17288,7 +17259,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -17326,7 +17297,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -17364,7 +17335,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -17402,7 +17373,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -17440,7 +17411,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -17478,7 +17449,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -17516,7 +17487,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -17554,7 +17525,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -17592,7 +17563,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -17630,7 +17601,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -17668,7 +17639,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -17706,7 +17677,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3532642391,
+            "sectionHash": 9,
             "description": "Source: Earned over the course of the Forsaken campaign."
         },
         "subSource": {
@@ -17744,7 +17715,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 798957490,
+            "sectionHash": 9,
             "description": "Source: Complete wanted escapee bounties for the Spider."
         },
         "subSource": {
@@ -17782,7 +17753,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -17820,7 +17791,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2821852478,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Complete this weapon's associated Crucible quest."
         },
@@ -17859,7 +17830,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -17897,7 +17868,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -17935,7 +17906,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -17973,7 +17944,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18011,7 +17982,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18049,7 +18020,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -18087,7 +18058,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -18125,7 +18096,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18163,7 +18134,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18201,7 +18172,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18239,7 +18210,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18277,7 +18248,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -18315,7 +18286,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -18353,7 +18324,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -18392,7 +18363,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -18431,7 +18402,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -18469,7 +18440,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -18507,7 +18477,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -18545,7 +18515,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -18583,7 +18553,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -18621,7 +18591,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -18659,7 +18628,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -18697,7 +18666,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -18735,7 +18704,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -18773,7 +18742,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18811,7 +18780,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18849,7 +18818,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -18887,7 +18856,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -18925,7 +18894,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -18963,7 +18932,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19001,7 +18970,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19039,7 +19008,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -19077,7 +19046,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 1952675042,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit Prime matches and increase your rank."
         },
         "subSource": {
@@ -19115,7 +19084,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -19153,7 +19122,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -19191,7 +19160,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -19229,7 +19198,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19267,7 +19236,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -19305,7 +19274,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 790433146,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Dark Alliance\" in the European Dead Zone."
         },
         "subSource": {
@@ -19343,7 +19312,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19381,7 +19350,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -19420,7 +19389,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -19458,7 +19427,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -19496,7 +19465,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -19535,7 +19504,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2096915131,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Poor Reception\" in the European Dead Zone."
         },
         "subSource": {
@@ -19573,7 +19542,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3754173885,
+            "sectionHash": 9,
             "description": "Source: Adventure \"Getting Your Hands Dirty\" in the European Dead Zone."
         },
         "subSource": {
@@ -19611,7 +19580,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -19649,7 +19618,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -19687,7 +19656,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -19725,7 +19694,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19763,7 +19732,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19801,7 +19770,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -19839,7 +19808,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -19877,7 +19845,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -19915,7 +19882,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -19953,7 +19919,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -19991,7 +19957,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -20029,7 +19995,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2559145507,
+            "sectionHash": 9,
             "description": "Source: Complete activities in the Dreaming City."
         },
         "subSource": {
@@ -20067,7 +20033,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2851783112,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"Lake of Shadows.\""
         },
         "subSource": {
@@ -20105,7 +20071,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -20143,7 +20109,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20181,7 +20146,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20219,7 +20183,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -20257,7 +20221,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1906492169,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Nessus."
         },
         "subSource": {
@@ -20295,7 +20259,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -20333,7 +20297,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1373723300,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages in the EDZ."
         },
         "subSource": {
@@ -20371,7 +20335,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 315474873,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Io."
         },
         "subSource": {
@@ -20409,7 +20373,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -20447,7 +20411,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20485,7 +20448,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20523,7 +20485,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20561,7 +20522,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -20599,7 +20559,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -20637,7 +20597,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -20675,7 +20635,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -20713,7 +20673,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -20751,7 +20711,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -20789,7 +20749,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -20827,7 +20787,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -20865,7 +20825,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1677921161,
+            "sectionHash": 8,
             "description": "Source: Festival of the Lost 2018."
         },
         "subSource": {
@@ -20903,7 +20863,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -20941,7 +20901,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -20979,7 +20939,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -21017,7 +20977,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -21055,7 +21015,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -21093,7 +21052,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -21131,7 +21089,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -21169,7 +21126,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 3147603678,
+            "sectionHash": 3,
             "description": "Acquired from the raid \"Crown of Sorrow.\""
         },
         "subSource": {
@@ -21207,7 +21164,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2310754348,
+            "sectionHash": 4,
             "description": "Source: World Quest \"Data Recovery\" on Mars."
         },
         "subSource": {
@@ -21245,7 +21202,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2937902448,
+            "sectionHash": 3,
             "description": "Source: Leviathan, Eater of Worlds raid lair."
         },
         "subSource": {
@@ -21283,7 +21240,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 1464399708,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Executor Hideo."
         },
         "subSource": {
@@ -21321,7 +21278,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -21359,7 +21316,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -21397,7 +21354,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -21435,7 +21392,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -21473,7 +21430,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -21511,7 +21468,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -21549,7 +21506,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -21587,7 +21544,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1144274899,
+            "sectionHash": 4,
             "bindTo": "Vanguard",
             "description": "Source: Complete this weapon's associated Vanguard quest."
         },
@@ -21626,7 +21583,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1832642406,
+            "sectionHash": 4,
             "description": "Source: World Quest \"Dynasty\" on Io."
         },
         "subSource": {
@@ -21664,7 +21621,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -21702,7 +21658,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -21740,7 +21696,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 1607607347,
+            "sectionHash": 1,
             "description": "Source: Complete Trials tickets and earn rank-up packages from the Emissary of the Nine."
         },
         "subSource": {
@@ -21778,7 +21734,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2653618435,
+            "sectionHash": 3,
             "description": "Source: Leviathan raid."
         },
         "subSource": {
@@ -21816,7 +21772,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1771326504,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on the Tangled Shore."
         },
         "subSource": {
@@ -21854,7 +21810,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -21892,7 +21848,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -21931,7 +21887,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -21969,7 +21925,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 3079246067,
+            "sectionHash": 4,
             "description": "Source: Complete Osiris' Lost Prophecies for Brother Vance on Mercury."
         },
         "subSource": {
@@ -22007,7 +21963,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 2537301256,
+            "sectionHash": 4,
             "bindTo": "Crucible",
             "description": "Source: Reach a Glory rank of \"Fabled\" in the Crucible."
         },
@@ -22046,7 +22002,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1036506031,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mars."
         },
         "subSource": {
@@ -22084,7 +22040,7 @@
         },
         "source": {
             "name": "Quests",
-            "hash": 1957611613,
+            "sectionHash": 4,
             "bindTo": "Exotic",
             "description": "Source: An Exotic quest or challenge."
         },
@@ -22123,7 +22079,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -22161,7 +22117,7 @@
         },
         "source": {
             "name": "Gambit",
-            "hash": 2170269026,
+            "sectionHash": 5,
             "description": "Source: Complete Gambit matches and earn rank-up packages from the Drifter."
         },
         "subSource": {
@@ -22199,7 +22155,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -22237,7 +22193,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 2455011338,
+            "sectionHash": 3,
             "description": "Source: Last Wish raid."
         },
         "subSource": {
@@ -22275,7 +22231,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -22313,7 +22269,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3534706087,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Saturn's Moon, Titan."
         },
         "subSource": {
@@ -22351,7 +22307,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1654120320,
+            "sectionHash": 9,
             "description": "Source: Complete activities and earn rank-up packages on Mercury."
         },
         "subSource": {
@@ -22389,7 +22345,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2805208672,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"The Hollowed Lair.\""
         },
         "subSource": {
@@ -22427,7 +22383,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -22465,7 +22421,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -22503,7 +22459,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 3334812276,
+            "sectionHash": 9,
             "description": "Source: Open Legendary engrams and earn faction rank-up packages."
         },
         "subSource": {
@@ -22541,7 +22497,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22579,7 +22535,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22617,7 +22573,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22655,7 +22611,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -22693,7 +22649,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 2527168932,
+            "sectionHash": 2,
             "description": "Source: Complete strikes and earn rank-up packages from Commander Zavala."
         },
         "subSource": {
@@ -22731,7 +22687,7 @@
         },
         "source": {
             "name": "Black Armory Forge",
-            "hash": 2062058385,
+            "sectionHash": 6,
             "description": "Source: Crafted in a Black Armory forge."
         },
         "subSource": {
@@ -22769,7 +22725,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22807,7 +22763,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22845,7 +22801,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -22883,7 +22839,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -22921,7 +22877,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -22959,7 +22915,7 @@
         },
         "source": {
             "name": "Menagerie",
-            "hash": 2511152325,
+            "sectionHash": 7,
             "description": "Acquired from the Menagerie aboard the Leviathan."
         },
         "subSource": {
@@ -22997,7 +22953,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -23035,7 +22991,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 4054646289,
+            "sectionHash": 8,
             "description": "Source: Earned during the seasonal Dawning event."
         },
         "subSource": {
@@ -23073,7 +23029,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -23111,7 +23066,6 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 1788267693,
             "description": "Source: Earn rank-up packages from Banshee-44."
         },
         "subSource": {
@@ -23149,7 +23103,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -23187,7 +23141,7 @@
         },
         "source": {
             "name": "World Activities",
-            "hash": 2892963218,
+            "sectionHash": 9,
             "description": "Source: Earned while leveling."
         },
         "subSource": {
@@ -23225,7 +23179,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 897576623,
+            "sectionHash": 1,
             "description": "Source: Complete Crucible matches and earn rank-up packages from Lord Shaxx."
         },
         "subSource": {
@@ -23263,7 +23217,7 @@
         },
         "source": {
             "name": "Vanguard",
-            "hash": 1581680964,
+            "sectionHash": 2,
             "description": "Source: Complete Nightfall strike \"Tree of Probabilities.\""
         },
         "subSource": {
@@ -23301,7 +23255,7 @@
         },
         "source": {
             "name": "Exotic",
-            "hash": 1563875874,
+            "sectionHash": 10,
             "description": "Source: Exotic engrams; extremely rare world drops."
         },
         "subSource": {
@@ -23339,7 +23293,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {
@@ -23377,7 +23331,7 @@
         },
         "source": {
             "name": "Events",
-            "hash": 3569603185,
+            "sectionHash": 8,
             "description": "Source: Earn rank-up packages from Lakshmi-2."
         },
         "subSource": {
@@ -23415,7 +23369,7 @@
         },
         "source": {
             "name": "Raids",
-            "hash": 1675483099,
+            "sectionHash": 3,
             "description": "Source: Leviathan, Spire of Stars raid lair."
         },
         "subSource": {
@@ -23453,7 +23407,7 @@
         },
         "source": {
             "name": "Crucible",
-            "hash": 3072862693,
+            "sectionHash": 1,
             "description": "Source: Complete Iron Banner matches and earn rank-up packages from Lord Saladin."
         },
         "subSource": {

@@ -143,6 +143,7 @@ function generateApplicationData (responses, lang) {
             let mappedSrc = activityMap[lang][collectibles[item].sourceHash];
             sources[collectibles[item].itemHash] = {}
             sources[collectibles[item].itemHash].name = mappedSrc ? mappedSrc.section : activityMap[lang].other.section;
+            sources[collectibles[item].itemHash].sectionHash = mappedSrc ? mappedSrc.sectionHash : activityMap[lang].other.sectionHash;
             sources[collectibles[item].itemHash].subSection =  mappedSrc ? mappedSrc.subSection : '';
             sources[collectibles[item].itemHash].description = collectibles[item].sourceString;
             sources[collectibles[item].itemHash].hash = collectibles[item].sourceHash;
@@ -279,7 +280,7 @@ function generateApplicationData (responses, lang) {
                         },
                         source: {
                             name: sources[item].name,
-                            hash: sources[item].hash,
+                            sectionHash: sources[item].sectionHash,
                             bindTo: sources[item].bindTo,
                             description: sources[item].description
                         },
