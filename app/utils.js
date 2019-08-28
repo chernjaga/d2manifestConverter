@@ -288,12 +288,13 @@ function generateApplicationData (responses, lang) {
                         srcHash = sources[item].hash;
                         srcDescription = sources[item].description;
                     }
-
+3580904580
                     if (sources[item]) {
                         srcObject = {
                             name: sources[item].name,
                             sectionHash: sources[item].sectionHash,
                             bindTo: bindToVar,
+                            bindTo1: item == 3580904580 ?  'Raids' : null,
                             description: sources[item].description
                         };
                         subSrcObject = {
