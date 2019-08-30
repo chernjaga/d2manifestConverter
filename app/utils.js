@@ -46,8 +46,7 @@ function errorHandler(message, level, stackTrace) {
     } else {
          errorsObj.errors[level].msg[message].count =  errorsObj.errors[level].msg[message].count + 1;
     }
-}
-
+};
 
 function generateSocketsData (data) {
     console.log('...weapon sockets processing'.yellow);
@@ -288,7 +287,6 @@ function generateApplicationData (responses, lang) {
                         srcHash = sources[item].hash;
                         srcDescription = sources[item].description;
                     }
-3580904580
                     if (sources[item]) {
                         srcObject = {
                             name: sources[item].name,
@@ -304,6 +302,8 @@ function generateApplicationData (responses, lang) {
                     } else {
                         throw new Error ('item is not valid');
                     }
+                    let ammoTypeValue = getAmmoType(weaponDefinition[item].itemCategoryHashes[0], weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2])
+                    
                     reducedWeaponDescription = {
                         displayedProperties: {
                             name: displayedPropertyObject.name,
@@ -326,8 +326,12 @@ function generateApplicationData (responses, lang) {
                             name: weaponDefinition[item].itemTypeDisplayName || null,
                             hash: weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2]
                         },
-                        ammoType: getAmmoType(weaponDefinition[item].itemCategoryHashes[0], weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2]),
+                        ammoType: {
+                            name: ammoTypeValue.toString(),
+                            hash: ammoTypeValue
+                        },
                         damageType: damageTypeObject,
+                        frame: getFrameObject(perksArray[0].vendorPerk, perksBucket),
                         hash: weaponDefinition[item].hash
                     };
                 
@@ -385,6 +389,13 @@ function getSeason(itemHash, requirementsString, activityHash) {
         console.log(err);
     }
 
+}
+
+function getFrameObject(frameId, pull) {
+    return {
+        name: pull[frameId].name,
+        hash: frameId
+    };
 }
 
 module.exports = {
