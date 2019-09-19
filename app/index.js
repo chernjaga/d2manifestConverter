@@ -13,7 +13,7 @@ console.log('let\'s start'.yellow);
 console.time('completed');
 
 new Promise((resolve) => {
-    // resolve(fetchManifestTables(lang));
+    resolve(fetchManifestTables(lang));
     resolve();
 }).then(function() {
     const collectibleItemsPromise = new Promise ((resolve) => {
