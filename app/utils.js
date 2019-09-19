@@ -352,6 +352,7 @@ function generateApplicationData (responses, lang) {
         
     };
 
+    perk2hashBuild(reducedWeaponStats, perksBucket);
 
     if (!fs.existsSync('./destination')){
         fs.mkdirSync('./destination');
@@ -359,6 +360,8 @@ function generateApplicationData (responses, lang) {
     if (!fs.existsSync(`./destination/${lang}`)){
         fs.mkdirSync(`./destination/${lang}`);
     }
+
+    
     fs.createWriteStream(`destination/${lang}/weaponMainList.json`).write(JSON.stringify(reducedWeapon));
     fs.createWriteStream(`destination/${lang}/weaponStats.json`).write(JSON.stringify(reducedWeaponStats));
     fs.createWriteStream(`destination/${lang}/perksBucket.json`).write(JSON.stringify(perksBucket));
@@ -367,6 +370,24 @@ function generateApplicationData (responses, lang) {
     console.log('finished'.yellow);
     consoleReport();
 };
+
+function perk2hashBuild(weapons, perks) {
+    var perk2hash = {};
+    for (let weaponHash in weapons) {
+        let weaponPerksArray = weapons[weaponHash].perks;
+        weaponPerksArray.forEach(function(perk) {
+            perk.randomizedPerks.forEach(function(perkHash) {
+                if (!perk2hash[perkHash]) {
+                    perk2hash[perkHash] = [];
+                    perk2hash[perkHash].push(weaponHash);
+                } else {
+                    perk2hash[perkHash].push(weaponHash);
+                }
+            });
+        });
+    }
+    fs.createWriteStream('destination/perk2hash.json').write(JSON.stringify(perk2hash));
+}
 
 function getSeason(itemHash, requirementsString, activityHash) {
     var exceptions = seasonMap.exceptions;
