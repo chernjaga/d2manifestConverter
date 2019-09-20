@@ -54,6 +54,22 @@ function fetchManifestTables (language) {
                 fs.outputFileSync('extractedManifest/'+ language +'/DestinyStatDefinition.json', JSON.stringify(json['DestinyStatDefinition']));
                 return json;
             })
+            .then(json => {
+                console.log('writing Entities');
+                var output = {}
+                var testData = 'Entities'
+                for (var field in json) {
+                    output[field] = field;
+                }
+                fs.outputFileSync('extractedManifest/' + testData + '.json', JSON.stringify(output));
+                return json;
+            })
+            .then(json => {
+                console.log('writing DestinyTalentGridDefinition');
+                var testData = 'DestinyTalentGridDefinition'
+                fs.outputFileSync('extractedManifest/'+ language +'/' + testData + '.json', JSON.stringify(json[testData]));
+                return json;
+            })
             .then(() => {
                 console.timeEnd('downloading')
                 resolve();
