@@ -29,22 +29,26 @@ function consoleReport() {
 
 function errorHandler(message, level, stackTrace) {
     var isCounterStart = false;
-    errorsObj.errorsSummary = errorsObj.errorsSummary + 1;
-    if (!errorsObj.errors[level]) {
-        errorsObj.errors[level] = {};
-        errorsObj.errors[level].count = 1;
-        isCounterStart = true;
-    }
-    if (!isCounterStart) {
-        errorsObj.errors[level].count = errorsObj.errors[level].count + 1;
-    }
-    if (!errorsObj.errors[level].msg) {
-        errorsObj.errors[level].msg = {};
-        errorsObj.errors[level].msg[message] = {};
-        errorsObj.errors[level].msg[message].count = 1;
-        errorsObj.errors[level].msg[message].stack = stackTrace;
-    } else {
-         errorsObj.errors[level].msg[message].count =  errorsObj.errors[level].msg[message].count + 1;
+    try {
+        errorsObj.errorsSummary = errorsObj.errorsSummary + 1;
+        if (!errorsObj.errors[level]) {
+            errorsObj.errors[level] = {};
+            errorsObj.errors[level].count = 1;
+            isCounterStart = true;
+        }
+        if (!isCounterStart) {
+            errorsObj.errors[level].count = errorsObj.errors[level].count + 1;
+        }
+        if (!errorsObj.errors[level].msg) {
+            errorsObj.errors[level].msg = {};
+            errorsObj.errors[level].msg[message] = {};
+            errorsObj.errors[level].msg[message].count = 1;
+            errorsObj.errors[level].msg[message].stack = stackTrace;
+        } else {
+            errorsObj.errors[level].msg[message].count =  errorsObj.errors[level].msg[message].count + 1;
+        }
+    } catch (e) {
+        console.log(e.message.red);
     }
 };
 

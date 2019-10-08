@@ -85,6 +85,7 @@ new Promise((resolve) => {
             const itemDefinitions = require(`../extractedManifest/${lang}/DestinyInventoryItemDefinition.json`);
             resolve(itemDefinitions);
         }).then((definitions) => {
+            console.dir(definitions);
             console.log('itemDefinitions are downloaded'.yellow);
             console.log('...processing'.yellow);
 
