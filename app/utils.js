@@ -221,17 +221,17 @@ function generateApplicationData (responses, lang) {
                     };
 
                     // perks level
-
                     try {
                         let perksItems = weaponDefinition[item].sockets ? weaponDefinition[item].sockets.socketEntries : [];
 
-                        for (let perk in perksItems) {
+                        for (let perk of perksItems) {
                             let perkObjectToPush = {};
-                            let hash = perksItems[perk].singleInitialItemHash;
+                            let hash = perk.singleInitialItemHash;
                             let randomizedPerks = [];
                             let tempPerksMap = {};
-                            if (perksItems[perk].randomizedPlugItems.length) {
-                                for (let randomizedPerk of perksItems[perk].randomizedPlugItems) {
+                            if (perk.randomizedPlugItems && perk.randomizedPlugItems.length) {
+                                
+                                for (let randomizedPerk of perk.randomizedPlugItems) {
                                     if (!tempPerksMap[randomizedPerk.plugItemHash]) {
                                         tempPerksMap[randomizedPerk.plugItemHash] = true;
                                         randomizedPerks.push(randomizedPerk.plugItemHash);
@@ -239,8 +239,9 @@ function generateApplicationData (responses, lang) {
     
                                 }
                             }
-                            if (perksItems[perk].reusablePlugItems.length) {
-                                for (let randomizedPerk of perksItems[perk].reusablePlugItems) {
+
+                            if (perk.reusablePlugItems && perk.reusablePlugItems.length) {
+                                for (let randomizedPerk of perk.reusablePlugItems) {
                                     if (!tempPerksMap[randomizedPerk.plugItemHash]) {
                                         tempPerksMap[randomizedPerk.plugItemHash] = true;
                                         randomizedPerks.push(randomizedPerk.plugItemHash);
@@ -248,6 +249,8 @@ function generateApplicationData (responses, lang) {
     
                                 }
                             }
+                            
+                            
                             if (perks[hash] || sockets[hash]) {
                                 let investmentStats = sockets[hash] ? sockets[hash].investmentStats : [];
                                 let displayObject = perks[hash] ? perks[hash].displayProperties : sockets[hash];
