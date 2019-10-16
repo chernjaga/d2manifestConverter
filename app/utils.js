@@ -369,9 +369,9 @@ function generateApplicationData (responses, lang) {
                     }
 
                 } catch (error) {
-                    console.log('ERROR IN '.red);
-                    console.dir(weaponDefinition[item]);
-                    console.log('');
+                    // console.log('ERROR IN '.red);
+                    // console.dir(weaponDefinition[item]);
+                    // console.log('');
                     errorHandler(error.message, 'displayed properties', error.stack);
                 };
             }

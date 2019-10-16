@@ -15,7 +15,7 @@ const getUrl = function(url) {
 };
 
 function fetchManifestTables (language) {
-    console.log('Tables downloading...'.yellow);
+    console.log('Tables are downloading...'.yellow);
     console.time('downloading');
     return new Promise((resolve) => {
         fetch(getUrl('/Destiny2/Manifest/'), params)
@@ -25,49 +25,14 @@ function fetchManifestTables (language) {
             fetch('https://www.bungie.net/' + path ,params)
             .then(response => response.json())
             .then(json => {
-                console.log('writing DestinyCollectibleDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinyCollectibleDefinition.json', JSON.stringify(json['DestinyCollectibleDefinition']));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinyDamageTypeDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinyDamageTypeDefinition.json', JSON.stringify(json['DestinyDamageTypeDefinition']));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinyInventoryItemDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinyInventoryItemDefinition.json', JSON.stringify(json['DestinyInventoryItemDefinition']));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinyItemCategoryDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinyItemCategoryDefinition.json', JSON.stringify(json['DestinyItemCategoryDefinition']));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinySandboxPerkDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinySandboxPerkDefinition.json', JSON.stringify(json['DestinySandboxPerkDefinition']));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinyStatDefinition');
-                fs.outputFileSync('extractedManifest/'+ language +'/DestinyStatDefinition.json', JSON.stringify(json['DestinyStatDefinition']));
-                return json;
-            })
-            .then(json => {
                 console.log('writing Entities');
                 var output = {}
                 var testData = 'Entities'
                 for (var field in json) {
+                    createManifestDefinition(field, json, language);
                     output[field] = field;
                 }
                 fs.outputFileSync('extractedManifest/' + testData + '.json', JSON.stringify(output));
-                return json;
-            })
-            .then(json => {
-                console.log('writing DestinyPlugSetDefinition');
-                var testData = 'DestinyPlugSetDefinition'
-                fs.outputFileSync('extractedManifest/'+ language +'/' + testData + '.json', JSON.stringify(json[testData]));
                 return json;
             })
             .then(() => {
@@ -88,6 +53,11 @@ function fetchManifestTables (language) {
         });
     });
 };
+
+function createManifestDefinition(field, data, language) {
+    console.log('writing ' + field);
+    fs.outputFileSync('extractedManifest/'+ language +'/' + field + '.json', JSON.stringify(data[field]));
+}
 
 module.exports = {
     fetchManifestTables: fetchManifestTables
