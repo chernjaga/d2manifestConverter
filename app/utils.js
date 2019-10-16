@@ -130,7 +130,6 @@ function generateApplicationData (responses, lang) {
     let reducedWeapon = {};
     let reducedWeaponStats = {};
     let perksBucket = {}
-
     let stats = responses[0];
     let perks = responses[1];
     let weaponDefinition = responses[2];
@@ -138,6 +137,7 @@ function generateApplicationData (responses, lang) {
     let sockets = responses[4];
     let categories = responses[5];
     let collectibles = responses[6];
+    let plugSets = responses[7];
     let sources = {};
     let exceptionObject = {
         requirement: null
@@ -225,10 +225,21 @@ function generateApplicationData (responses, lang) {
                         let perksItems = weaponDefinition[item].sockets ? weaponDefinition[item].sockets.socketEntries : [];
 
                         for (let perk of perksItems) {
+                            let setHash = perk.randomizedPlugSetHash;
                             let perkObjectToPush = {};
                             let hash = perk.singleInitialItemHash;
                             let randomizedPerks = [];
                             let tempPerksMap = {};
+                            if (setHash) {
+                                let set = plugSets[setHash].reusablePlugItems;
+                                for (let randomizedPerk of set) {
+                                    if (!tempPerksMap[randomizedPerk.plugItemHash]) {
+                                        tempPerksMap[randomizedPerk.plugItemHash] = true;
+                                        randomizedPerks.push(randomizedPerk.plugItemHash);
+                                    }
+                                }
+                            }
+
                             if (perk.randomizedPlugItems && perk.randomizedPlugItems.length) {
                                 
                                 for (let randomizedPerk of perk.randomizedPlugItems) {
@@ -307,8 +318,13 @@ function generateApplicationData (responses, lang) {
                             hash: sources[item].hash,
                         };
                     } else {
-                        throw new Error ('item is not valid');
+                        subSrcObject = {
+                            name: '',
+                            hash: ''
+                        }
+                        // throw new Error ('item is not valid');
                     }
+
                     let ammoTypeValue = getAmmoType(weaponDefinition[item].itemCategoryHashes[0], weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2])
                     
                     reducedWeaponDescription = {
@@ -353,6 +369,9 @@ function generateApplicationData (responses, lang) {
                     }
 
                 } catch (error) {
+                    console.log('ERROR IN '.red);
+                    console.dir(weaponDefinition[item]);
+                    console.log('');
                     errorHandler(error.message, 'displayed properties', error.stack);
                 };
             }

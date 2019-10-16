@@ -107,7 +107,20 @@ new Promise((resolve) => {
             console.log(error.message);
         });
 
-    Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise, collectibleItemsPromise])
+    const plugSetPromise = new Promise ((resolve) => {
+            const plugSetDefinitions = require(`../extractedManifest/${lang}/DestinyPlugSetDefinition.json`);
+            resolve(plugSetDefinitions);
+        }).then((data) => {
+            console.log('PlugSets are downloaded'.yellow);
+            console.log('...processing'.yellow);
+
+            return data;
+        }).catch((error) => {
+            console.log('can\'t read DestinyPlugSetDefinition.json for plug sets level'.red);
+            console.log(error.message);
+        });
+
+    Promise.all([statsPromise, perksPromise, definitionPromise, damageTypePromise, weaponSocketsPromise, categoryDefinitionsPromise, collectibleItemsPromise, plugSetPromise])
         .then((responses) => {
             generateApplicationData(responses, lang);
         })

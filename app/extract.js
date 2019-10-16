@@ -65,8 +65,8 @@ function fetchManifestTables (language) {
                 return json;
             })
             .then(json => {
-                console.log('writing DestinyTalentGridDefinition');
-                var testData = 'DestinyTalentGridDefinition'
+                console.log('writing DestinyPlugSetDefinition');
+                var testData = 'DestinyPlugSetDefinition'
                 fs.outputFileSync('extractedManifest/'+ language +'/' + testData + '.json', JSON.stringify(json[testData]));
                 return json;
             })
@@ -76,7 +76,7 @@ function fetchManifestTables (language) {
             })
             .catch(error => {
                 console.log('*********************************'.red);
-                console.log('world content writong level'.red);
+                console.log('world content writing level'.red);
                 console.log(error.message);
                 console.log('*********************************'.red);
             })
