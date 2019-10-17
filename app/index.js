@@ -13,8 +13,8 @@ console.log('let\'s start'.yellow);
 console.time('completed');
 
 new Promise((resolve) => {
-    resolve(fetchManifestTables(lang));
-    // resolve();
+    // resolve(fetchManifestTables(lang));
+    resolve();
 }).then(function() {
     const collectibleItemsPromise = new Promise ((resolve) => {
             const collectibles = require(`../extractedManifest/${lang}/DestinyCollectibleDefinition.json`);

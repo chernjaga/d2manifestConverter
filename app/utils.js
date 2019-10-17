@@ -309,7 +309,7 @@ function generateApplicationData (responses, lang) {
                         srcObject = {
                             name: sources[item].name,
                             sectionHash: sources[item].sectionHash,
-                            bindTo: bindToVar,
+                            bindTo: item == 3524313097 && item !== 2429822976? 'Exotic' : bindToVar,
                             bindTo1: item == 3580904580 ?  'Raids' : null,
                             description: sources[item].description
                         };
@@ -318,11 +318,7 @@ function generateApplicationData (responses, lang) {
                             hash: sources[item].hash,
                         };
                     } else {
-                        subSrcObject = {
-                            name: '',
-                            hash: ''
-                        }
-                        // throw new Error ('item is not valid');
+                        throw new Error ('item is not valid');
                     }
 
                     let ammoTypeValue = getAmmoType(weaponDefinition[item].itemCategoryHashes[0], weaponDefinition[item].itemCategoryHashes[3] || weaponDefinition[item].itemCategoryHashes[2])
@@ -429,7 +425,6 @@ function getSeason(itemHash, requirementsString, activityHash) {
         if (requirements[requirementsString]) {
             return requirements[requirementsString];
         }
-    
         return 1;
     } catch (err) {
         console.log('season isn\'t detected');

@@ -143,8 +143,8 @@ module.exports = {
             subSection: 'Rank Packages'
         },
         1952675042: {
-            section: 'Gambit',
-            sectionHash: 5,
+            section: 'Season activities',
+            sectionHash: 11,
             subSection: 'Gambit Prime / Reckoning'
         },
         2170269026: {
@@ -261,7 +261,19 @@ module.exports = {
             bindTo: 'Gambit',
             subSection: 'Gambit Special Quest'
         },
+        1162859311: {
+            section: 'Quests',
+            sectionHash: 4,
+            bindTo: 'Gambit',
+            subSection: 'Gambit Special Quest'
+        },
         1144274899: {
+            section: 'Quests',
+            sectionHash: 4,
+            bindTo: 'Vanguard',
+            subSection: 'Vanguard Special Quest'
+        },
+        2317365255: {
             section: 'Quests',
             sectionHash: 4,
             bindTo: 'Vanguard',
@@ -279,8 +291,8 @@ module.exports = {
             subSection: 'Spider\'s bounties'
         },
         2062058385: {
-            section: 'Black Armory Forge',
-            sectionHash: 6,
+            section: 'Season activities',
+            sectionHash: 11,
             subSection: 'Black Armory Forge'
         },
         146504277: {
@@ -425,10 +437,42 @@ module.exports = {
             sectionHash: 1,
             subSection: 'Rank Packages'
         },
+        1999000205: {
+            section: 'Season activities',
+            sectionHash: 11,
+            subSection: 'Moon Essences'
+        },
+        1223492644: {
+            section: 'Quests',
+            sectionHash: 4,
+            bindTo: 'Crucible',
+            subSection: 'Crucible Special Quest'
+        },
+        4122810030: {
+            section: 'Season activities',
+            sectionHash: 11,
+            subSection: 'Vex Offensive'
+        },
+        1491707941: {
+            section: 'Raids',
+            sectionHash: 3,
+            subSection: 'Garden of Salvation'
+        },
+        594540014: {
+            section: 'Quests',
+            sectionHash: 4,
+            bindTo: 'Exotic',
+            subSection: 'Exotic Quest'
+        },
+        1838401392: {
+            section: 'Other',
+            sectionHash: 0,
+            subSection: 'Season Pass'
+        },
         other: {
             section: 'Other',
             sectionHash: 0,
-            subSection: ''
+            subSection: 'Other'
         }
     }
 }
